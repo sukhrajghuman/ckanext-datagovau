@@ -1,0 +1,14 @@
+{% ckan_extends %}
+
+{% block subtitle %}{{ pkg.title or pkg.name }}{% endblock %}
+
+{% block links -%}
+{{ super() }}
+<link rel="lol" type="test"/>
+{% endblock -%}
+
+{% block head_extras -%}
+{{ super() }}
+<meta property="og:gon" content="lol">
+{% endblock -%}
+
