@@ -8,17 +8,15 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/resource_item.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/package_basic_fields.html" afterPath="$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/package_basic_fields.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/package_metadata_fields.html" afterPath="$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/package_metadata_fields.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ckanext/datagovau/plugin.py" afterPath="$PROJECT_DIR$/ckanext/datagovau/plugin.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ckanext/datagovau/templates/package/read.html" afterPath="$PROJECT_DIR$/ckanext/datagovau/templates/package/read.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ckanext/datagovau/templates/package/read.rdf" afterPath="$PROJECT_DIR$/ckanext/datagovau/templates/package/read.rdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ckanext/datagovau/templates/package/read_base.html" afterPath="$PROJECT_DIR$/ckanext/datagovau/templates/package/read_base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ckanext/datagovau/templates/package/resource_read.html" afterPath="$PROJECT_DIR$/ckanext/datagovau/templates/package/resource_read.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ckanext-datagovau.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="89ace156-8d75-43de-ba53-6e829c197435" time="1379979943634" ignored="false" />
+    <file path="/Dummy.txt" changelist="89ace156-8d75-43de-ba53-6e829c197435" time="1379987697128" ignored="false" />
     <file path="/plugin.py" changelist="89ace156-8d75-43de-ba53-6e829c197435" time="1379980346924" ignored="false" />
     <file path="/setup.py" changelist="89ace156-8d75-43de-ba53-6e829c197435" time="1379980236185" ignored="false" />
     <file path="/package_basic_fields.html" changelist="89ace156-8d75-43de-ba53-6e829c197435" time="1379984845682" ignored="false" />
@@ -672,7 +670,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Move Disqus comments to package not resource page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Allow anonymous access to datastore API search" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -688,6 +686,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Update HTML package output to interim metadata standard" />
     <MESSAGE value="Move Disqus comments to package not resource page" />
+    <MESSAGE value="Allow anonymous access to datastore API search" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
