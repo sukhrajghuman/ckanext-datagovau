@@ -5,24 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89ace156-8d75-43de-ba53-6e829c197435" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/resource_item.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/package_basic_fields.html" afterPath="$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/package_basic_fields.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/package_metadata_fields.html" afterPath="$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/package_metadata_fields.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ckanext/datagovau/plugin.py" afterPath="$PROJECT_DIR$/ckanext/datagovau/plugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ckanext/datagovau/templates/package/read.html" afterPath="$PROJECT_DIR$/ckanext/datagovau/templates/package/read.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ckanext/datagovau/templates/package/read.rdf" afterPath="$PROJECT_DIR$/ckanext/datagovau/templates/package/read.rdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ckanext/datagovau/templates/package/read_base.html" afterPath="$PROJECT_DIR$/ckanext/datagovau/templates/package/read_base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ckanext/datagovau/templates/package/resource_read.html" afterPath="$PROJECT_DIR$/ckanext/datagovau/templates/package/resource_read.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ckanext-datagovau.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="89ace156-8d75-43de-ba53-6e829c197435" time="1379979602449" ignored="false" />
-    <file path="/plugin.py" changelist="89ace156-8d75-43de-ba53-6e829c197435" time="1378731005672" ignored="false" />
-    <file path="/setup.py" changelist="89ace156-8d75-43de-ba53-6e829c197435" time="1378168657134" ignored="false" />
-    <file path="/package_basic_fields.html" changelist="89ace156-8d75-43de-ba53-6e829c197435" time="1378727992485" ignored="false" />
-    <file path="/package_metadata_fields.html" changelist="89ace156-8d75-43de-ba53-6e829c197435" time="1378729194397" ignored="false" />
-    <file path="/read_base.html" changelist="89ace156-8d75-43de-ba53-6e829c197435" time="1378774943838" ignored="false" />
-    <file path="/read.rdf" changelist="89ace156-8d75-43de-ba53-6e829c197435" time="1378775057466" ignored="false" />
+    <file path="/Dummy.txt" changelist="89ace156-8d75-43de-ba53-6e829c197435" time="1379979943634" ignored="false" />
+    <file path="/plugin.py" changelist="89ace156-8d75-43de-ba53-6e829c197435" time="1379980346924" ignored="false" />
+    <file path="/setup.py" changelist="89ace156-8d75-43de-ba53-6e829c197435" time="1379980236185" ignored="false" />
+    <file path="/package_basic_fields.html" changelist="89ace156-8d75-43de-ba53-6e829c197435" time="1379984845682" ignored="false" />
+    <file path="/package_metadata_fields.html" changelist="89ace156-8d75-43de-ba53-6e829c197435" time="1379984915516" ignored="false" />
+    <file path="/read_base.html" changelist="89ace156-8d75-43de-ba53-6e829c197435" time="1379985182291" ignored="false" />
+    <file path="/read.rdf" changelist="89ace156-8d75-43de-ba53-6e829c197435" time="1379985068490" ignored="false" />
     <file path="/README.rst" changelist="89ace156-8d75-43de-ba53-6e829c197435" time="1378703724236" ignored="false" />
-    <file path="/a.dummy" changelist="89ace156-8d75-43de-ba53-6e829c197435" time="1378689054922" ignored="false" />
-    <file path="/read.html" changelist="89ace156-8d75-43de-ba53-6e829c197435" time="1378721657045" ignored="false" />
+    <file path="/a.dummy" changelist="89ace156-8d75-43de-ba53-6e829c197435" time="1379987251443" ignored="false" />
+    <file path="/read.html" changelist="89ace156-8d75-43de-ba53-6e829c197435" time="1379984781447" ignored="false" />
     <file path="/create.py" changelist="89ace156-8d75-43de-ba53-6e829c197435" time="1378705719051" ignored="false" />
     <file path="/additional_info.html" changelist="89ace156-8d75-43de-ba53-6e829c197435" time="1378717234941" ignored="false" />
-    <file path="/resource_read.html" changelist="89ace156-8d75-43de-ba53-6e829c197435" time="1378775248415" ignored="false" />
+    <file path="/resource_read.html" changelist="89ace156-8d75-43de-ba53-6e829c197435" time="1379985226010" ignored="false" />
+    <file path="/resources_list.html" changelist="89ace156-8d75-43de-ba53-6e829c197435" time="1379986542457" ignored="false" />
+    <file path="/resource_item.html" changelist="89ace156-8d75-43de-ba53-6e829c197435" time="1379987596016" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,19 +93,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="package_metadata_fields.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/package_metadata_fields.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="74" selection-start="1081" selection-end="1081" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="read_base.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/package/read_base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="247" selection-end="1668" vertical-scroll-proportion="0.0">
+            <state line="6" column="110" selection-start="190" selection-end="190" vertical-scroll-proportion="-3.9230769">
               <folding />
             </state>
           </provider>
@@ -104,16 +105,70 @@
       <file leaf-file-name="resource_read.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/package/resource_read.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="51" selection-start="1921" selection-end="1921" vertical-scroll-proportion="-19.038462">
+            <state line="10" column="0" selection-start="233" selection-end="246" vertical-scroll-proportion="-6.5384617">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="read.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="read.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/user/read.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="read.rdf" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/package/read.rdf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="57" column="119" selection-start="2936" selection-end="2936" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard_datasets.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/user/dashboard_datasets.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="21" selection-start="0" selection-end="18" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plugin.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ckanext/datagovau/plugin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="154" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resource_item.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/resource_item.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="129" selection-start="1133" selection-end="1133" vertical-scroll-proportion="0.5771605">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package_basic_fields.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/package_basic_fields.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="125" selection-start="2745" selection-end="2745" vertical-scroll-proportion="-13.807693">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="read.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/package/read.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="154" selection-start="872" selection-end="872" vertical-scroll-proportion="0.68">
+            <state line="12" column="96" selection-start="451" selection-end="451" vertical-scroll-proportion="-7.8461537">
               <folding />
             </state>
           </provider>
@@ -138,21 +193,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/ckanext/datagovau/theme/templates/layout.html" />
         <option value="$PROJECT_DIR$/ckanext/datagovau/forms.py" />
-        <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/README.rst" />
         <option value="$PROJECT_DIR$/ckanext/datagovau/theme/public/licenses.json" />
         <option value="$PROJECT_DIR$/../ckan/ckan/logic/action/create.py" />
         <option value="$PROJECT_DIR$/../ckan/ckan/templates/package/snippets/additional_info.html" />
         <option value="$PROJECT_DIR$/../ckan/ckan/templates/package/read_base.html" />
+        <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/ckanext/datagovau/plugin.py" />
         <option value="$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/package_basic_fields.html" />
         <option value="$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/package_metadata_fields.html" />
-        <option value="$PROJECT_DIR$/ckanext/datagovau/plugin.py" />
-        <option value="$PROJECT_DIR$/ckanext/datagovau/templates/package/read_base.html" />
         <option value="$PROJECT_DIR$/ckanext/datagovau/templates/package/read.rdf" />
         <option value="$PROJECT_DIR$/ckanext/datagovau/templates/package/resource_read.html" />
+        <option value="$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/resources_list.html" />
+        <option value="$PROJECT_DIR$/ckanext/datagovau/templates/package/read_base.html" />
         <option value="$PROJECT_DIR$/ckanext/datagovau/templates/package/read.html" />
+        <option value="$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/resource_item.html" />
       </list>
     </option>
   </component>
@@ -296,6 +352,10 @@
               <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -320,6 +380,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="package" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ckanext-datagovau" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ckanext-datagovau" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ckanext" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datagovau" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="package" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="snippets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -524,17 +614,17 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22048998" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16183448" sideWeight="0.6703786" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16183448" sideWeight="0.77951" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22048998" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22091782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -624,47 +714,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/package_basic_fields.html">
+    <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ckanext/datagovau/plugin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="0" selection-start="4140" selection-end="4271" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/package_metadata_fields.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="74" selection-start="1081" selection-end="1081" vertical-scroll-proportion="0.0">
+        <state line="23" column="48" selection-start="677" selection-end="677" vertical-scroll-proportion="0.6788194">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/package/read_base.html">
+    <entry file="file://$PROJECT_DIR$/ckanext/datagovau/plugin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="247" selection-end="1668" vertical-scroll-proportion="0.0">
+        <state line="14" column="154" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/package/read.rdf">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="50" selection-start="2578" selection-end="2596" vertical-scroll-proportion="0.0">
+        <state line="57" column="119" selection-start="2936" selection-end="2936" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/package_metadata_fields.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="70" selection-start="675" selection-end="675" vertical-scroll-proportion="-11.769231">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/user/dashboard_datasets.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="21" selection-start="0" selection-end="18" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/user/read.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/package/resource_read.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="51" selection-start="1921" selection-end="1921" vertical-scroll-proportion="-19.038462">
+        <state line="10" column="0" selection-start="233" selection-end="246" vertical-scroll-proportion="-6.5384617">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/package/read_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="110" selection-start="190" selection-end="190" vertical-scroll-proportion="-3.9230769">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/package/read.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="154" selection-start="872" selection-end="872" vertical-scroll-proportion="0.68">
+        <state line="12" column="96" selection-start="451" selection-end="451" vertical-scroll-proportion="-7.8461537">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/package_basic_fields.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="125" selection-start="2745" selection-end="2745" vertical-scroll-proportion="-13.807693">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/resource_item.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="129" selection-start="1133" selection-end="1133" vertical-scroll-proportion="0.5771605">
           <folding />
         </state>
       </provider>
