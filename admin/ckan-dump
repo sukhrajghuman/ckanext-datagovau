@@ -1,0 +1,39 @@
+#!/bin/bash
+export LD_LIBRARY_PATH=/usr/local/lib
+export PATH=/usr/local/bin:$PATH
+
+DATE=`date +%Y-%m-%d`
+
+#source /var/lib/ckan/dga/pyenv/bin/activate
+#cd /var/lib/ckan/dga/pyenv/src/ckan
+#/var/lib/ckan/dga/pyenv/bin/paster --plugin=ckan rdf-export /var/www/dumps/rdf/raw/ --config /var/lib/ckan/dga/pyenv/src/ckan/development.ini
+#/var/lib/ckan/dga/pyenv/bin/paster --plugin=ckan tracking export /var/www/dumps/stats/$DATE.csv  --config /var/lib/ckan/dga/pyenv/src/ckan/development.ini
+
+for ln in `curl "http://data.gov.au/api/3/action/package_search?q=metadata_modified%3A%5BNOW-3DAY%20TO%20NOW%5D&rows=999" | jq '.result.results[] | {name}' -r | grep "name" | cut -f4 -d' ' | sed s/\"//g`; do 
+wget http://data.gov.au/dataset/$ln.rdf -O /var/www/dumps/rdf/raw/$ln.rdf; 
+wget http://data.gov.au/api/3/action/package_show?id=$ln -O /var/www/dumps/json/raw/$ln.json; 
+python /var/lib/ckan/dga/pyenv/src/dga-spatialingestor/dga-spatialingestor.py '{"dbname":"ckan", "user":"ckan", "password":"", "host":"sql.data.gov.au"}' http://data.gov.au xxxx-apikey geoserverpass $ln;
+done
+
+
+zip /var/www/dumps/rdf/$DATE /var/www/dumps/rdf/raw/*
+cd /var/www/dumps/rdf/raw/
+# remove zero byte files
+find . -size 0c -delete
+tar cfJ /var/www/dumps/rdf/$DATE.tar.xz *.rdf
+ln -sf /var/www/dumps/rdf/$DATE.tar.xz /var/www/dumps/rdf/latest.tar.xz
+ln -sf /var/www/dumps/rdf/$DATE.tar.xz /var/www/dumps/rdf-latest.tar.xz
+
+zip /var/www/dumps/json/$DATE /var/www/dumps/json/raw/*
+cd /var/www/dumps/json/raw/
+tar cfJ /var/www/dumps/json/$DATE.tar.xz *.json
+ln -sf /var/www/dumps/json/$DATE.tar.xz /var/www/dumps/json/latest.tar.xz
+ln -sf /var/www/dumps/json/$DATE.tar.xz /var/www/dumps/json-latest.tar.xz
+
+chown
+
+kill `ps -ef | grep [f]useki-server | awk '{print $2}'`
+rm /root/jena-fuseki-1.0.1/datagovauDB/*
+~/apache-jena-2.11.1/bin/tdbloader2 --loc ~/jena-fuseki-1.0.1/datagovauDB /var/www/dumps/rdf/raw/*
+cd ~/jena-fuseki-1.0.1
+nohup ~/jena-fuseki-1.0.1/fuseki-server --loc ~/jena-fuseki-1.0.1/datagovauDB /dataset >/var/log/fuseki.out 2>&1&
