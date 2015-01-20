@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="89ace156-8d75-43de-ba53-6e829c197435" name="Default" comment="Add support for AAD metadata via WAF">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ckanext-dga-ga-report/ckanext-dga-ga-report.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckanext/datagovau/templates/snippets/context/dataset.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckanext/datagovau/templates/snippets/context/group.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/package_context.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/resource_info.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ckanext-agls/ckanext/agls/templates/snippets/search_package_list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckanext/datagovau/templates/snippets/context/user.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twenty-orgs-per-page.patch" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../ckanext-hierarchy/ckanext/hierarchy/logic/action.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../ckanext-hierarchy/ckanext/hierarchy/model.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../ckanext-hierarchy/ckanext/hierarchy/templates/organization/about.html" afterPath="" />
@@ -20,10 +15,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ckanext-googleanalytics/ckanext/googleanalytics/controller.py" afterPath="$PROJECT_DIR$/../ckanext-googleanalytics/ckanext/googleanalytics/controller.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../datapusher/deployment/datapusher_settings.py" afterPath="$PROJECT_DIR$/../datapusher/deployment/datapusher_settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ckanext-dga-stats/ckanext/dga_stats/templates/ckanext/stats/index.html" afterPath="$PROJECT_DIR$/../ckanext-dga-stats/ckanext/dga_stats/templates/ckanext/stats/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ckanext/datagovau/templates/group/snippets/info.html" afterPath="$PROJECT_DIR$/ckanext/datagovau/templates/group/snippets/info.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/info.html" afterPath="$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/info.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../datapusher/datapusher/jobs.py" afterPath="$PROJECT_DIR$/../datapusher/datapusher/jobs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ckanext/datagovau/templates/snippets/organization.html" afterPath="$PROJECT_DIR$/ckanext/datagovau/templates/snippets/organization.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ckanext-hierarchy/ckanext/hierarchy/plugin.py" afterPath="$PROJECT_DIR$/../ckanext-hierarchy/ckanext/hierarchy/plugin.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../datapusher/tests/settings_test.py" afterPath="$PROJECT_DIR$/../datapusher/tests/settings_test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -43,7 +35,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/ckanext-datagovau$datapusher_tests.coverage" NAME="datapusher tests Coverage Results" MODIFIED="1415245116488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../datapusher" />
     <SUITE FILE_PATH="coverage/ckanext-datagovau$paster_gather.coverage" NAME="paster gather Coverage Results" MODIFIED="1415847856903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../ckan" />
-    <SUITE FILE_PATH="coverage/ckanext-datagovau$paster_serve.coverage" NAME="paster serve Coverage Results" MODIFIED="1421710879405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../ckan" />
+    <SUITE FILE_PATH="coverage/ckanext-datagovau$paster_serve.coverage" NAME="paster serve Coverage Results" MODIFIED="1421713075266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../ckan" />
     <SUITE FILE_PATH="coverage/ckanext-datagovau$paster_fetch.coverage" NAME="paster fetch Coverage Results" MODIFIED="1415853528620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../ckan" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -125,12 +117,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="user.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/snippets/context/user.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44289044" vertical-offset="0" max-vertical-offset="858">
-              <caret line="19" column="80" selection-start-line="19" selection-start-column="80" selection-end-line="19" selection-end-column="80" />
+            <state vertical-scroll-proportion="-17.692308" vertical-offset="0" max-vertical-offset="660">
+              <caret line="23" column="69" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../ckan/ckan/controllers/package.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.9275093" vertical-offset="7501" max-vertical-offset="30060">
+              <caret line="400" column="62" selection-start-line="400" selection-start-column="62" selection-end-line="400" selection-end-column="62" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -411,220 +415,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ckanext-datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext-datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext-datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext-datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext-datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext-datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext-datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext-datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext-datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext-datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext-datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="snippets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext-datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext-datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="snippets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="context" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext-datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext-datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="package" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext-datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext-datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="package" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="snippets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext-datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext-datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="snippets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1164,7 +954,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32896176" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21844128" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3798024" sideWeight="0.49946466" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3798024" sideWeight="0.49946466" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3798024" sideWeight="0.5005353" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32711306" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1220,7 +1010,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Add energyrating scraper" />
     <MESSAGE value="Add budget cleanup" />
     <MESSAGE value="TPDFINXCADC-3171 Datapusher Code Improvements" />
     <MESSAGE value="PEP8 fixes for Google Analytics Event Tracking for CKAN API" />
@@ -1245,7 +1034,8 @@
     <MESSAGE value="Disable search sorting that can be accidently triggered when navigating by keyboard" />
     <MESSAGE value="Fix related item performance and don't truncate related item description" />
     <MESSAGE value="2 across organisation layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="2 across organisation layout" />
+    <MESSAGE value="Issue 10&#9;Definition list mark-up used inappropriately&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Issue 10&#9;Definition list mark-up used inappropriately&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1259,16 +1049,6 @@
           <url>file://$PROJECT_DIR$/../ckanext-spatial/ckanext/spatial/harvesters/base.py</url>
           <line>372</line>
           <option name="timeStamp" value="174" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/../ckan/ckan/controllers/package.py</url>
-          <line>385</line>
-          <option name="timeStamp" value="188" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/../ckan/ckan/controllers/package.py</url>
-          <line>384</line>
-          <option name="timeStamp" value="191" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -1539,16 +1319,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ckan/ckan/controllers/package.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7521" max-vertical-offset="30060">
-          <caret line="377" column="24" selection-start-line="377" selection-start-column="24" selection-end-line="377" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../ckanext-agls/ckanext/agls/templates/snippets/package_item.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.538462" vertical-offset="0" max-vertical-offset="1500">
@@ -1695,9 +1465,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/snippets/context/user.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44289044" vertical-offset="0" max-vertical-offset="858">
-          <caret line="19" column="80" selection-start-line="19" selection-start-column="80" selection-end-line="19" selection-end-column="80" />
+        <state vertical-scroll-proportion="-17.692308" vertical-offset="0" max-vertical-offset="660">
+          <caret line="23" column="69" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ckan/ckan/controllers/package.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9275093" vertical-offset="7501" max-vertical-offset="30060">
+          <caret line="400" column="62" selection-start-line="400" selection-start-column="62" selection-end-line="400" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
