@@ -51,6 +51,16 @@ def get_ddg_site_statistics():
            left join related_dataset rd on r.id = rd.related_id
            where rd.status = 'active' or rd.id is null''').first()[0]
     stats['related_count'] = result
+    result = model.Session.execute(
+        '''select count(*) from resource
+        INNER JOIN resource_group on resource.resource_group_id = resource_group.id
+        where resource.state='active' and
+        (webstore_url = 'active' or format='wms')
+        and package_id not IN
+        (select distinct package_id from package INNER JOIN package_extra
+        on package.id = package_extra.package_id where key = 'harvest_portal')
+        ''').first()[0]
+    stats['api_count'] = result
 
     return stats
 
