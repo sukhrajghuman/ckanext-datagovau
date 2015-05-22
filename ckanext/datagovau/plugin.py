@@ -6,6 +6,7 @@ import ckan.lib.dictization.model_dictize as model_dictize
 import ckan.plugins.toolkit as tk
 import ckan.model as model
 import ckan.logic as logic
+import os
 from pylons import config
 
 from sqlalchemy import orm
@@ -14,6 +15,7 @@ import ckan.model
 import ckanext.datagovau.action as action
 from ckan.lib.plugins import DefaultGroupForm
 from ckan.lib.plugins import DefaultOrganizationForm
+from ckan.lib import uploader, formatters
 # get user created datasets and those they have edited
 def get_user_datasets(user_dict):
     created_datasets_list = user_dict['datasets']
@@ -64,6 +66,19 @@ def get_ddg_site_statistics():
 
     return stats
 
+def get_resource_file_size(rsc):
+    if rsc.get('url_type') == 'upload':
+        upload = uploader.ResourceUpload(rsc)
+        value = os.path.getsize(upload.get_path(rsc['id']))
+        try:
+            value = formatters.localised_filesize(int(value))
+        except ValueError:
+            # Sometimes values that can't be converted to ints can sneak
+            # into the db. In this case, just leave them as they are.
+            pass
+        return value
+    return None
+
 
 class DataGovAuPlugin(plugins.SingletonPlugin,
                       tk.DefaultDatasetForm):
@@ -94,7 +109,7 @@ class DataGovAuPlugin(plugins.SingletonPlugin,
 
     def get_helpers(self):
         return {'get_user_datasets': get_user_datasets, 'get_related_dataset': get_related_dataset,
-                'get_ddg_site_statistics': get_ddg_site_statistics}
+                'get_ddg_site_statistics': get_ddg_site_statistics, 'get_resource_file_size': get_resource_file_size}
 
 
     # IActions
