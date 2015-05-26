@@ -69,8 +69,9 @@ def get_ddg_site_statistics():
 def get_resource_file_size(rsc):
     if rsc.get('url_type') == 'upload':
         upload = uploader.ResourceUpload(rsc)
-        value = os.path.getsize(upload.get_path(rsc['id']))
+        value = None
         try:
+            value = os.path.getsize(upload.get_path(rsc['id']))
             value = formatters.localised_filesize(int(value))
         except ValueError:
             # Sometimes values that can't be converted to ints can sneak
