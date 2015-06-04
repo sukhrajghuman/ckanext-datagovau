@@ -73,7 +73,7 @@ def get_resource_file_size(rsc):
         try:
             value = os.path.getsize(upload.get_path(rsc['id']))
             value = formatters.localised_filesize(int(value))
-        except ValueError:
+        except Exception:
             # Sometimes values that can't be converted to ints can sneak
             # into the db. In this case, just leave them as they are.
             pass
