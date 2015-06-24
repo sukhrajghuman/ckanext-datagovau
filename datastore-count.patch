@@ -1,0 +1,27 @@
+diff --git a/ckanext/datastore/db.py b/ckanext/datastore/db.py
+index 1121c9e..becca68 100644
+--- a/ckanext/datastore/db.py
++++ b/ckanext/datastore/db.py
+@@ -967,7 +967,8 @@ def search_data(context, data_dict):
+         sort_clause = ''
+ 
+     sql_string = u'''SELECT {distinct} {select}
+-                    FROM "{resource}" {ts_query}
++                    FROM "{resource}" ,(SELECT reltuples FROM pg_class
++WHERE relname = '{resource}') as c {ts_query}
+                     {where} {sort} LIMIT {limit} OFFSET {offset}'''.format(
+         distinct=distinct,
+         select=select_columns,
+diff --git a/ckanext/datastore/plugin.py b/ckanext/datastore/plugin.py
+index 2380ce1..9e66177 100644
+--- a/ckanext/datastore/plugin.py
++++ b/ckanext/datastore/plugin.py
+@@ -384,7 +384,7 @@ class DatastorePlugin(p.SingletonPlugin):
+         where = self._where(data_dict, fields_types)
+ 
+         select_cols = [u'"{0}"'.format(field_id) for field_id in field_ids] +\
+-                      [u'count(*) over() as "_full_count" %s' % rank_column]
++                      [u'c.reltuples AS "_full_count" %s' % rank_column]
+ 
+         query_dict['distinct'] = data_dict.get('distinct', False)
+         query_dict['select'] += select_cols

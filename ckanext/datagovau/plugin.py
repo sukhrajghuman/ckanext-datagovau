@@ -55,8 +55,7 @@ def get_ddg_site_statistics():
     stats['related_count'] = result
     result = model.Session.execute(
         '''select count(*) from resource
-        INNER JOIN resource_group on resource.resource_group_id = resource_group.id
-        where resource.state='active' and
+        where resource.state='active' and        
         (webstore_url = 'active' or format='wms')
         and package_id not IN
         (select distinct package_id from package INNER JOIN package_extra
