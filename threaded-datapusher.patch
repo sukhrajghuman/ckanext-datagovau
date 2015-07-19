@@ -1,18 +1,33 @@
+diff --git a/ckanext/datapusher/logic/action.py b/ckanext/datapusher/logic/action.py
+index 1af23c3..c24cb11 100644
+--- a/ckanext/datapusher/logic/action.py
++++ b/ckanext/datapusher/logic/action.py
+@@ -51,8 +51,9 @@ def datapusher_submit(context, data_dict):
+     site_url = pylons.config['ckan.site_url']
+     callback_url = site_url.rstrip('/') + '/api/3/action/datapusher_hook'
+ 
+-    user = p.toolkit.get_action('user_show')(context, {'id': context['user']})
+-
++    #user = p.toolkit.get_action('user_show')(context, {'id': context['user']})
++    user = p.toolkit.get_action('get_site_user')({'ignore_auth': True}, {})
++    context['user'] = user
+     task = {
+         'entity_id': res_id,
+         'entity_type': 'resource',
 diff --git a/ckanext/datapusher/plugin.py b/ckanext/datapusher/plugin.py
-index 56fb44d..6d9d0a0 100644
+index 25858f6..d0cab03 100644
 --- a/ckanext/datapusher/plugin.py
 +++ b/ckanext/datapusher/plugin.py
-@@ -9,7 +9,8 @@ import ckanext.datapusher.helpers as helpers
- import ckan.logic as logic
+@@ -10,6 +10,8 @@ import ckan.logic as logic
  import ckan.model as model
  import ckan.plugins.toolkit as toolkit
--
-+import threading
-+import Queue
- log = logging.getLogger(__name__)
- _get_or_bust = logic.get_or_bust
  
-@@ -47,9 +48,9 @@ class ResourceDataController(base.BaseController):
++import Queue
++import threading
+ from ckan.common import _
+ 
+ log = logging.getLogger(__name__)
+@@ -53,9 +55,9 @@ class ResourceDataController(base.BaseController):
                  None, {'id': resource_id}
              )
          except logic.NotFound:
@@ -24,7 +39,7 @@ index 56fb44d..6d9d0a0 100644
  
          try:
              datapusher_status = p.toolkit.get_action('datapusher_status')(
-@@ -61,6 +62,30 @@ class ResourceDataController(base.BaseController):
+@@ -69,6 +71,30 @@ class ResourceDataController(base.BaseController):
          return base.render('package/resource_data.html',
                             extra_vars={'status': datapusher_status})
  
@@ -39,7 +54,7 @@ index 56fb44d..6d9d0a0 100644
 +            # grabs host from queue
 +            (context,entity_id) = self.queue.get()
 +
-+            log.debug("Sending resource to datastore: " + entity_id)
++            log.debug("Queue Processing: Sending resource to datastore: " + entity_id)
 +            try:
 +                p.toolkit.get_action('datapusher_submit')(context, {
 +                    'resource_id': entity_id
@@ -55,7 +70,7 @@ index 56fb44d..6d9d0a0 100644
  
  class DatapusherPlugin(p.SingletonPlugin):
      p.implements(p.IConfigurable, inherit=True)
-@@ -73,12 +98,16 @@ class DatapusherPlugin(p.SingletonPlugin):
+@@ -81,12 +107,16 @@ class DatapusherPlugin(p.SingletonPlugin):
  
      legacy_mode = False
      resource_show_action = None
@@ -73,10 +88,11 @@ index 56fb44d..6d9d0a0 100644
  
          for config_option in ('ckan.site_url', 'ckan.datapusher.url',):
              if not config.get(config_option):
-@@ -98,15 +127,7 @@ class DatapusherPlugin(p.SingletonPlugin):
+@@ -105,16 +135,10 @@ class DatapusherPlugin(p.SingletonPlugin):
+                            'defer_commit': True}
                  if (entity.format and
                          entity.format.lower() in self.datapusher_formats and
-                         entity.url_type != 'datapusher'):
+-                        entity.url_type != 'datapusher'):
 -                    try:
 -                        p.toolkit.get_action('datapusher_submit')(context, {
 -                            'resource_id': entity.id
@@ -86,6 +102,9 @@ index 56fb44d..6d9d0a0 100644
 -                        # of raising otherwise resource save will fail with 500
 -                        log.critical(e)
 -                        pass
++                        entity.url_type != 'datapusher' and
++                        not hasattr(entity,'datapusher_exempt')):
++                    log.debug('Added datapusher to queue for '+entity.id)
 +                    self.submit_queue.put((context,entity.id))
  
      def before_map(self, m):
