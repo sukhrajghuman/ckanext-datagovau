@@ -4,11 +4,11 @@ from string import Template
 
 update = True
 
-destination = ckanapi.RemoteCKAN()
+destination = ckanapi.RemoteCKAN('https://data.gov.au','c3557c21-bfda-44e7-a5c3-c97de603d56b')
 extent_template = Template('''
     {"type": "Polygon", "coordinates": [[[$xmin, $ymin], [$xmax, $ymin], [$xmax, $ymax], [$xmin, $ymax], [$xmin, $ymin]]]}
     ''')
-results = destination.action.package_search(rows=500,fq="res_format:wms")
+results = destination.action.package_search(rows=500,fq="res_format:WMS and metadata_modified:[NOW-2MONTH TO NOW]")
 print results['count']
 
 wms_cache = {}
@@ -57,8 +57,13 @@ for result in results['results']:
         else:
             bad_extent = 'Point' in result['spatial']
         for res in result['resources']:
+            if res['format'] == 'WMS':
+                res['format'] = 'wms'
+                if update:
+                    destination.call_action('resource_update',res)
+                print "resource "+res['name']+" updated"
             if 'aims' not in res['name'] \
-                    and res['format'] == 'wms' \
+                    and res['format'] == 'WMS' \
                     and ('wms_layer' not in res or bad_extent):
                 try:
                     wms = get_wms(res['url'])
