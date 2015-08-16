@@ -82,7 +82,7 @@ function _repTag(old, updated) {
 }
 
 function gazSearch(gazURL) {
-  if (gazURL.trim().substring(0,1) == "{") {
+  if (gazURL != undefined && gazURL.trim().substring(0,1) == "{") {
     // geojson
     $('#spatial').val(gazURL.replace("\n",""));
   } else {
