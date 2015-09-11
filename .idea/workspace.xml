@@ -1,28 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/../ckanext-agls/ckanext/agls/controller.py" line="49" mnemonic="9" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="89ace156-8d75-43de-ba53-6e829c197435" name="Default" comment="Unique visitors">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ckanext-datarequests/ckanext-datarequests.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ckanext-harvest/ckanext/harvest/harvesters/test.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ckanext-hierarchy/ckanext/hierarchy/logic/action.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ckanext-hierarchy/ckanext/hierarchy/model.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ckanext-hierarchy/ckanext/hierarchy/templates/organization/about.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ckanext-hierarchy/ckanext/hierarchy/templates/organization/snippets/organization_form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ckanext-hierarchy/ckanext/hierarchy/templates/organization/snippets/organization_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ckanext-hierarchy/ckanext/hierarchy/templates/organization/snippets/organization_tree.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ckanext-agls/ckanext-agls.iml" afterPath="$PROJECT_DIR$/../ckanext-agls/ckanext-agls.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ckanext-harvest/ckanext/harvest/harvesters/ckanharvester.py" afterPath="$PROJECT_DIR$/../ckanext-harvest/ckanext/harvest/harvesters/ckanharvester.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ckanext/datagovau/theme/public/js/datagovau.js" afterPath="$PROJECT_DIR$/ckanext/datagovau/theme/public/js/datagovau.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../datapusher/deployment/datapusher_settings.py" afterPath="$PROJECT_DIR$/../datapusher/deployment/datapusher_settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/fix-wms-extent.py" afterPath="$PROJECT_DIR$/admin/fix-wms-extent.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../datapusher/datapusher/jobs.py" afterPath="$PROJECT_DIR$/../datapusher/datapusher/jobs.py" />
+    <list default="true" id="fcf9c9a8-4c94-4dec-aba1-b090d97ae58a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/resources_list.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/other.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/testrunner.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ckanext-datagovau.iml" afterPath="$PROJECT_DIR$/ckanext-datagovau.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/package_basic_fields.html" afterPath="$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/package_basic_fields.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ckanext-agls/ckanext/agls/templates/snippets/package_item.html" afterPath="$PROJECT_DIR$/../ckanext-agls/ckanext/agls/templates/snippets/package_item.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ckanext-agls/ckanext/agls/plugin.py" afterPath="$PROJECT_DIR$/../ckanext-agls/ckanext/agls/plugin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ckanext-hierarchy/ckanext/hierarchy/plugin.py" afterPath="$PROJECT_DIR$/../ckanext-hierarchy/ckanext/hierarchy/plugin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../datapusher/tests/settings_test.py" afterPath="$PROJECT_DIR$/../datapusher/tests/settings_test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ckanext/datagovau/plugin.py" afterPath="$PROJECT_DIR$/ckanext/datagovau/plugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ckanext/datagovau/templates/package/search.html" afterPath="$PROJECT_DIR$/ckanext/datagovau/templates/package/search.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ckanext/datagovau/templates/home/snippets/stats.html" afterPath="$PROJECT_DIR$/ckanext/datagovau/templates/home/snippets/stats.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ckanext-datagovau.iws" />
@@ -38,59 +33,10 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/ckanext-datagovau$paster_serve.coverage" NAME="paster serve Coverage Results" MODIFIED="1438041316953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../ckan" />
-    <SUITE FILE_PATH="coverage/ckanext-datagovau$fix_wms_extent.coverage" NAME="fix-wms-extent Coverage Results" MODIFIED="1435715423220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/admin" />
-    <SUITE FILE_PATH="coverage/ckanext-datagovau$paster_serve_23.coverage" NAME="paster serve 23 Coverage Results" MODIFIED="1437529665288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../../twothree/src/ckan" />
+    <SUITE FILE_PATH="coverage/ckanext-datagovau$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1441881069239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../ckan" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_TOOLBAR" value="true" />
-    <option name="FLATTEN" value="false" />
-    <option name="GROUP_BY_TYPE" value="true" />
-    <option name="SORT_CHILDREN" value="false" />
-    <option name="SHOW_TABLE_CONSTRAINTS" value="true" />
-  </component>
-  <component name="DebuggerManager">
-    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true" converted="true">
-      <breakpoint>
-        <option name="NOTIFY_CAUGHT" value="true" />
-        <option name="NOTIFY_UNCAUGHT" value="true" />
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint>
-        <option name="NOTIFY_CAUGHT" value="true" />
-        <option name="NOTIFY_UNCAUGHT" value="true" />
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </breakpoint_any>
-    <ui_properties converted="true" />
-    <breakpoint_rules converted="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -99,120 +45,137 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="plugin.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ckanext/datagovau/plugin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+              <folding>
+                <marker date="1441933161000" expanded="true" signature="1023:1167" placeholder="select title..related_dataset..." />
+                <marker date="1441933161000" expanded="true" signature="1413:1562" placeholder="select count..package..." />
+                <marker date="1441933161000" expanded="true" signature="1649:1816" placeholder="select count..package..." />
+                <marker date="1441933161000" expanded="true" signature="1649:1936" placeholder="select count..package..." />
+                <marker date="1441933161000" expanded="true" signature="1856:1898" placeholder="select packa..package_extra..." />
+                <marker date="1441933161000" expanded="true" signature="2131:2280" placeholder="select count..related..." />
+                <marker date="1441933161000" expanded="true" signature="2379:2664" placeholder="select count..resource..." />
+                <marker date="1441933161000" expanded="true" signature="2521:2640" placeholder="select disti..package..." />
+                <marker date="1441933161000" expanded="true" signature="2807:2905" placeholder="SELECT name .._table_metadata..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plugin.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../ckanext-agls/ckanext/agls/plugin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="244" column="0" selection-start-line="244" selection-start-column="0" selection-end-line="244" selection-end-column="0" />
+            <state vertical-scroll-proportion="-4.9259257">
+              <caret line="189" column="20" selection-start-line="189" selection-start-column="13" selection-end-line="189" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../ckan/ckan/controllers/package.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.2580647">
+              <caret line="951" column="0" selection-start-line="951" selection-start-column="0" selection-end-line="951" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package_item.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../ckanext-agls/ckanext/agls/templates/snippets/package_item.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-25.0">
+              <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="development.ini" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../twothree/src/ckan/development.ini">
+      <file leaf-file-name="resources_list.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/resources_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="85" column="78" selection-start-line="85" selection-start-column="78" selection-end-line="85" selection-end-column="78" />
+            <state vertical-scroll-proportion="0.5210918">
+              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="datagovau.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ckanext/datagovau/theme/public/js/datagovau.js">
+      <file leaf-file-name="search.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/package/search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.70640177">
-              <caret line="109" column="3" selection-start-line="109" selection-start-column="3" selection-end-line="109" selection-end-column="3" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package_basic_fields.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/package_basic_fields.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.041667">
+              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package_context.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/package_context.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package_metadata_fields.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/package_metadata_fields.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.041667">
+              <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stats.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/home/snippets/stats.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.0">
+              <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+              <folding>
+                <marker date="1441927041000" expanded="true" signature="1753:1764" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
-  <component name="FindManager">
-    <FindUsagesManager>
-      <setting name="OPEN_NEW_TAB" value="false" />
-    </FindUsagesManager>
-  </component>
   <component name="Git.Settings">
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="ROOT_SYNC" value="SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$/../ckanext-googleanalytics" value="api-analytics-event-tracking" />
-      </map>
-    </option>
-    <push-targets>
-      <push-target-info repo="$PROJECT_DIR$" source="master" target-remote="origin" target-branch="master" />
-    </push-targets>
-  </component>
-  <component name="GitLogSettings">
-    <option name="myDateState">
-      <MyDateState />
-    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../ckan/ckan/templates/package/snippets/package_basic_fields.html" />
-        <option value="$PROJECT_DIR$/../ckan/ckan/new_authz.py" />
-        <option value="$PROJECT_DIR$/../ckan/ckan/lib/dictization/model_save.py" />
-        <option value="$PROJECT_DIR$/../ckanext-dga-stats/ckanext/dga_stats/templates/ckanext/stats/tmp.css" />
-        <option value="$PROJECT_DIR$/../ckanext-dga-stats/ckanext/dga_stats/stats.py" />
-        <option value="$PROJECT_DIR$/../ckanext-agls/requirements.txt" />
-        <option value="$PROJECT_DIR$/../ckanext-agls/ckanext/agls/templates/package/read.gmd" />
-        <option value="$PROJECT_DIR$/../ckanext-agls/ckanext/agls/templates/package/snippets/package_basic_fields.html" />
-        <option value="$PROJECT_DIR$/../ckanext-harvest/ckanext/harvest/templates_new/index.html" />
-        <option value="$PROJECT_DIR$/../ckanext-harvest/ckanext/harvest/templates_new/snippets/source_list.html" />
-        <option value="$PROJECT_DIR$/../ckanext-datajson/ckanext/datajson/parse_datajson.py" />
-        <option value="$PROJECT_DIR$/../ckanext-dga-ga-report/ckanext/ga_report/templates/ga_report/publisher/popular.html" />
-        <option value="$PROJECT_DIR$/../ckanext-dga-stats/ckanext/dga_stats/plugin.py" />
-        <option value="$PROJECT_DIR$/../ckanext-dga-stats/ckanext/dga_stats/templates/ckanext/stats/index.html" />
-        <option value="$PROJECT_DIR$/../ckanext-spatial/ckanext/spatial/harvesters/base.py" />
-        <option value="$PROJECT_DIR$/../ckanext-agls/ckanext/agls/controller.py" />
-        <option value="$PROJECT_DIR$/../ckanext-agls/ckanext/agls/templates/package/search.html" />
-        <option value="$PROJECT_DIR$/../ckanext-agls/ckanext/agls/templates/home/snippets/search.html" />
-        <option value="$PROJECT_DIR$/../ckanext-agls/ckanext/agls/templates/organization/about.html" />
-        <option value="$PROJECT_DIR$/../ckanext-agls/ckanext/agls/templates/snippets/package_item.html" />
-        <option value="$PROJECT_DIR$/../ckanext-agls/ckanext/agls/templates/package/read.html" />
-        <option value="$PROJECT_DIR$/../ckanext-cesiumpreview/ckanext/cesiumpreview/plugin.py" />
-        <option value="$PROJECT_DIR$/../ckanext-cesiumpreview/README.md" />
-        <option value="$PROJECT_DIR$/../ckanext-cesiumpreview/ckanext/cesiumpreview/theme/public/resource.config" />
-        <option value="$PROJECT_DIR$/../ckanext-cesiumpreview/ckanext/cesiumpreview/theme/templates/cesium.html" />
-        <option value="$PROJECT_DIR$/../ckanext-cesiumpreview/ckanext/cesiumpreview/theme/public/geojson-extent.js" />
-        <option value="$PROJECT_DIR$/../ckanext-cesiumpreview/ckanext/cesiumpreview/theme/public/preview_cesium.js" />
-        <option value="$PROJECT_DIR$/../ckan/ckan/lib/search/__init__.py" />
-        <option value="$PROJECT_DIR$/../ckan/ddg-development.ini" />
-        <option value="$PROJECT_DIR$/../ckanext-harvest/ckanext/harvest/harvesters/test.py" />
-        <option value="$PROJECT_DIR$/../ckanext-harvest/ckanext/harvest/harvesters/tmp" />
-        <option value="$PROJECT_DIR$/../ckanext-harvest/ckanext/harvest/harvesters/ckanharvester.py" />
-        <option value="$PROJECT_DIR$/ckanext/datagovau/templates/home/snippets/stats.html" />
-        <option value="$PROJECT_DIR$/../ckan/ckan/controllers/package.py" />
-        <option value="$PROJECT_DIR$/../ckanext-dga-ga-report/ckanext/ga_report/download_analytics.py" />
-        <option value="$PROJECT_DIR$/../ckanext-dga-ga-report/ckanext/ga_report/ga_model.py" />
-        <option value="$PROJECT_DIR$/../ckanext-dga-ga-report/ckanext/ga_report/templates/ga_report/publisher/read.html" />
-        <option value="$PROJECT_DIR$/../ckanext-dga-ga-report/ckanext/ga_report/templates/ga_report/site/index.html" />
-        <option value="$PROJECT_DIR$/../ckanext-dga-ga-report/ckanext/ga_report/controller.py" />
-        <option value="$PROJECT_DIR$/../ckanext-dga-ga-report/ckanext/ga_report/plugin.py" />
-        <option value="$PROJECT_DIR$/ckanext/datagovau/templates/package/resource_read.html" />
-        <option value="$PROJECT_DIR$/ckanext/datagovau/plugin.py" />
-        <option value="$PROJECT_DIR$/ckanext/datagovau/theme/public/css/datagovau.css" />
-        <option value="$PROJECT_DIR$/../ckanext-dga-ga-report/ckanext/ga_report/templates/ga_report/site/layout_base.html" />
-        <option value="$PROJECT_DIR$/../../../twothree/src/ckan/ckanext/datastore/db.py" />
-        <option value="$PROJECT_DIR$/../../../twothree/src/ckan/ckanext/datastore/plugin.py" />
-        <option value="$USER_HOME$/Downloads/map.kml" />
+        <option value="$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/package_basic_fields.html" />
         <option value="$PROJECT_DIR$/../ckanext-agls/ckanext/agls/plugin.py" />
-        <option value="$PROJECT_DIR$/admin/fix-wms-extent.py" />
-        <option value="$PROJECT_DIR$/../../../twothree/src/ckan/development.ini" />
-        <option value="$PROJECT_DIR$/ckanext/datagovau/theme/public/js/datagovau.js" />
+        <option value="$PROJECT_DIR$/../ckan/ckan/controllers/package.py" />
+        <option value="$PROJECT_DIR$/ckanext/datagovau/templates/home/snippets/stats.html" />
+        <option value="$PROJECT_DIR$/ckanext/datagovau/plugin.py" />
+        <option value="$PROJECT_DIR$/../ckanext-agls/ckanext/agls/templates/snippets/package_item.html" />
+        <option value="$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/resources_list.html" />
       </list>
     </option>
   </component>
@@ -228,12 +191,11 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="24" />
-    <option name="width" value="1922" />
-    <option name="height" value="1033" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="826" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -242,9 +204,6 @@
     <OptionsSetting value="true" id="Edit" />
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
-  </component>
-  <component name="ProjectReloadState">
-    <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -259,9 +218,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -269,321 +226,29 @@
               <option name="myItemId" value="ckanext-datagovau" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext-datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; CKAN23 Python 2.7.6 virtualenv at ~/ckan/lib/twothree &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext-datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; CKAN23 Python 2.7.6 virtualenv at ~/ckan/lib/twothree &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext-datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext-datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext-datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext-datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext-datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext-datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext-datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext-datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext-datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext-datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext-datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckanext" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="datagovau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="GoToClass.includeLibraries" value="false" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/map.kml" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="LayoutCode.rearrangeEntriesPython" value="false" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ckanext-agls" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="LayoutCode.rearrangeEntriesBash" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="216" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="239" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="243" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1131" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="227" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="235" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="240" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1127" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
-    <property name="options.lastSelected" value="preferences.updates" />
-    <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
-    <property name="FullScreen" value="false" />
-    <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="Push.Settings">
-    <excluded-roots>
-      <path value="$PROJECT_DIR$/../ckanext-agls" />
-      <path value="$PROJECT_DIR$/../ckanext-dga-ga-report" />
-      <path value="$PROJECT_DIR$/../ckanext-dga-stats" />
-      <path value="$PROJECT_DIR$/../datapusher" />
-    </excluded-roots>
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/admin" />
-      <recent name="$PROJECT_DIR$/../ckanext-dga-ga-report/ckanext/ga_report/templates/ga_report/site" />
-      <recent name="$PROJECT_DIR$/ckanext/datagovau/templates/package" />
-      <recent name="$PROJECT_DIR$/../ckanext-agls/patches" />
-      <recent name="$PROJECT_DIR$/../ckan" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/admin/files" />
-      <recent name="$PROJECT_DIR$/ckanext/datagovau/templates/organization" />
-      <recent name="$PROJECT_DIR$/ckanext/datagovau" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Python.paster serve">
-    <configuration default="false" name="energyratinggovau-scraper" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../../bin/python2.7" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/admin" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ckanext-spatial" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/admin/energyratinggovau-scraper.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="fix-contact-point" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../../bin/python2.7" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/admin" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="dga-spatialingestor" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/admin/fix-contact-point.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="fix-wms-extent" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../../bin/python2.7" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/admin" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="dga-spatialingestor" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/admin/fix-wms-extent.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../ckanext-harvest/ckanext/harvest/harvesters" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="dga-spatialingestor" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ckanext-harvest/ckanext/harvest/harvesters/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittest TestImport.test_wrong_api_key" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../../bin/python2.7" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../datapusher" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="datapusher" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../datapusher/tests/test_mocked.py" />
-      <option name="CLASS_NAME" value="TestImport" />
-      <option name="METHOD_NAME" value="test_wrong_api_key" />
-      <option name="FOLDER_NAME" value="$PROJECT_DIR$/../datapusher/tests" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.Unnamed">
     <configuration default="true" type="Applet" factoryName="Applet">
-      <module />
-      <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <module />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -601,17 +266,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="INTERPRETER_PATH" value="/bin/bash" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -623,13 +277,62 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ckanext-agls" />
+      <module name="ckanext-datagovau" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="TARGET" value="" />
       <option name="SETTINGS_FILE" value="" />
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
       <method />
     </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
@@ -650,9 +353,6 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -664,7 +364,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
+      <module name="ckanext-datagovau" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
@@ -679,19 +379,7 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <pass-parent-envs>true</pass-parent-envs>
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -703,7 +391,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ckanext-agls" />
+      <module name="ckanext-datagovau" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
@@ -723,7 +411,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ckanext-agls" />
+      <module name="ckanext-datagovau" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
@@ -743,7 +431,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ckanext-agls" />
+      <module name="ckanext-datagovau" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
@@ -765,7 +453,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
+      <module name="ckanext-datagovau" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
@@ -788,7 +476,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ckanext-agls" />
+      <module name="ckanext-datagovau" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
@@ -804,37 +492,13 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="ba" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="AWS_SECRET_ACCESS_KEY" value="CGNnt8m3vyBR4SkrZrwEhO3wL/l4bYy/aNpPuOHF" />
-        <env name="AWS_ACCESS_KEY_ID" value="AKIAISYMAUXRXADHOCKA" />
-      </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../../bin/python2.7" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/admin/" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ckanext-agls" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/admin/ba.py" />
-      <option name="PARAMETERS" value="alex.sadleir.604 fd2sgMui4UQ" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="paster fetch" type="PythonConfigurationType" factoryName="Python">
+    <configuration default="false" name="Unnamed" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../../bin/python2.7" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../ckan" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -842,170 +506,18 @@
       <module name="ckanext-datagovau" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../bin/paster" />
-      <option name="PARAMETERS" value="--plugin=ckanext-harvest harvester fetch_consumer --config=ddg-development.ini" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="paster gather" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../../bin/python2.7" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../ckan" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ckanext-datagovau" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../bin/paster" />
-      <option name="PARAMETERS" value="--plugin=ckanext-harvest harvester gather_consumer --config=ddg-development.ini" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="paster loadanalytics" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../../bin/python2.7" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../ckanext-dga-ga-report" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ckanext-datagovau" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../bin/paster" />
-      <option name="PARAMETERS" value="loadanalytics 2015-01 --config=../ckan/ddg-development.ini" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="paster run harvest" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../../bin/python2.7" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../ckan" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ckanext-datagovau" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../bin/paster" />
-      <option name="PARAMETERS" value="--plugin=ckanext-harvest harvester run --config=ddg-development.ini" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="paster serve" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../../bin/python2.7" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../ckan" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ckanext-datagovau" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../bin/paster" />
-      <option name="PARAMETERS" value="serve ddg-development.ini" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="paster serve 23" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../../../twothree/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../twothree/src/ckan" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ckanext-datagovau" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../twothree/bin/paster" />
       <option name="PARAMETERS" value="serve development.ini" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="datapusher tests" type="tests" factoryName="Unittests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../../bin/python2.7" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../datapusher" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ckanext-datagovau" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="$PROJECT_DIR$/../datapusher/tests" />
-      <option name="TEST_TYPE" value="TEST_FOLDER" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <list size="13">
-      <item index="0" class="java.lang.String" itemvalue="Python.ba" />
-      <item index="1" class="java.lang.String" itemvalue="Python.paster fetch" />
-      <item index="2" class="java.lang.String" itemvalue="Python.paster gather" />
-      <item index="3" class="java.lang.String" itemvalue="Python.paster loadanalytics" />
-      <item index="4" class="java.lang.String" itemvalue="Python.paster run harvest" />
-      <item index="5" class="java.lang.String" itemvalue="Python.paster serve" />
-      <item index="6" class="java.lang.String" itemvalue="Python.paster serve 23" />
-      <item index="7" class="java.lang.String" itemvalue="Python tests.datapusher tests" />
-      <item index="8" class="java.lang.String" itemvalue="Python.energyratinggovau-scraper" />
-      <item index="9" class="java.lang.String" itemvalue="Python.fix-contact-point" />
-      <item index="10" class="java.lang.String" itemvalue="Python.fix-wms-extent" />
-      <item index="11" class="java.lang.String" itemvalue="Python.test" />
-      <item index="12" class="java.lang.String" itemvalue="Python tests.Unittest TestImport.test_wrong_api_key" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Python.Unnamed" />
     </list>
-    <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.fix-wms-extent" />
-      </list>
-    </recent_temporary>
     <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
     </configuration>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
@@ -1014,67 +526,34 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
-    </configuration>
-    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
-      <Host>localhost</Host>
-      <Port>5050</Port>
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
-    <option name="USER" value="" />
-    <option name="PASSWORD" value="" />
-    <option name="mySSHConnectionTimeout" value="30000" />
-    <option name="mySSHReadTimeout" value="30000" />
-    <option name="LAST_MERGED_REVISION" />
-    <option name="MERGE_DRY_RUN" value="false" />
-    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
-    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
-    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
-    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
-    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <option name="FORCE_UPDATE" value="false" />
-    <option name="IGNORE_EXTERNALS" value="false" />
-    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="24" width="1922" height="1033" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="826" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819384" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2544053" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43612334" sideWeight="0.4989339" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43092105" sideWeight="0.5010661" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32488987" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270925" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27801493" sideWeight="0.77951" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37155458" sideWeight="0.49946752" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32822758" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32968238" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1088,460 +567,135 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
-    <MESSAGE value="SXTPDFINXZZE-82 WMS Metadata Changes for NatMap" />
-    <MESSAGE value="Only show active packages in total datasets stats" />
-    <MESSAGE value="Remove local Gazetteer DB and add site specific customisations to templates" />
-    <MESSAGE value="Support data.json v1.1 for ESRI Open Data" />
-    <MESSAGE value="Support data.json v1.1 for ESRI Open Data&#10;" />
-    <MESSAGE value="IS_SITE Helper" />
-    <MESSAGE value="Include user full name in user access list" />
-    <MESSAGE value="Don't use package_revision for timestamps" />
-    <MESSAGE value="TPDFINXCCHI-6 use Shapely for spatial extent" />
-    <MESSAGE value="TPDFINXCCHI-6 use Shapely for spatial extent&#10;" />
-    <MESSAGE value="Adjust frontpage stats" />
-    <MESSAGE value="Allow use of all groups" />
-    <MESSAGE value="Restrict access to viewing lists and adding harvesters" />
-    <MESSAGE value="Support WMS/WFS resources from ArcGIS Open Data data.json" />
-    <MESSAGE value="Split UAL by year" />
-    <MESSAGE value="Organisation mapping update" />
-    <MESSAGE value="onload fixes" />
-    <MESSAGE value="Add gazetteer API." />
-    <MESSAGE value="Display dataset formats in dataset listings" />
-    <MESSAGE value="WMS/Spatial extent support" />
-    <MESSAGE value="API enable resources stat" />
-    <MESSAGE value="Unique visitors" />
-    <MESSAGE value="Resource Filesize" />
-    <MESSAGE value="Mobile fixes" />
-    <MESSAGE value="Add missing files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add missing files" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/../../../twothree/src/ckan/ckanext/datastore/plugin.py</url>
-          <line>387</line>
-          <option name="timeStamp" value="590" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/../../../twothree/src/ckan/ckanext/datastore/plugin.py</url>
-          <line>398</line>
-          <option name="timeStamp" value="592" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/../../../twothree/src/ckan/ckanext/datastore/db.py</url>
-          <line>980</line>
-          <option name="timeStamp" value="594" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/../ckanext-agls/ckanext/agls/plugin.py</url>
-          <line>298</line>
-          <option name="timeStamp" value="595" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/../ckanext-agls/ckanext/agls/plugin.py</url>
-          <line>243</line>
-          <option name="timeStamp" value="596" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/../ckanext-agls/ckanext/agls/plugin.py</url>
-          <line>244</line>
-          <option name="timeStamp" value="597" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/../ckanext-agls/ckanext/agls/plugin.py</url>
-          <line>204</line>
-          <option name="timeStamp" value="598" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/../ckanext-agls/ckanext/agls/plugin.py</url>
-          <line>205</line>
-          <option name="timeStamp" value="599" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="602" />
+      <option name="time" value="13" />
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="tests">
-        <watch expression="web.app.config.get('DISABLE_DATE')" />
-      </configuration>
-      <configuration name="PythonConfigurationType">
-        <watch expression="c" language="Python" />
-        <watch expression="request" language="Python" />
-        <watch expression="request.params.get('pkg_name')" language="Python" />
-      </configuration>
-    </watches-manager>
+    <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/header.html">
+    <entry file="file://$PROJECT_DIR$/../ckan/ckanext/datastore/db.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="108" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1441850206000" expanded="true" signature="-1:-1" placeholder="SELECT oid, ..pg_type..." />
+            <marker date="1441850206000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..{0}..." />
+            <marker date="1441850206000" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..{0}..." />
+            <marker date="1441850206000" expanded="true" signature="-1:-1" placeholder="SELECT name .._table_metadata..." />
+            <marker date="1441850206000" expanded="true" signature="-1:-1" placeholder="SELECT alias.._table_metadata..." />
+            <marker date="1441850206000" expanded="true" signature="-1:-1" placeholder="ALTER TABLE &quot;{0}&quot;..." />
+            <marker date="1441850206000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1441850206000" expanded="true" signature="-1:-1" placeholder="UPDATE &quot;{res..." />
+            <marker date="1441850206000" expanded="true" signature="-1:-1" placeholder="UPDATE &quot;{res..." />
+            <marker date="1441850206000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1441850206000" expanded="true" signature="-1:-1" placeholder="SELECT {valu..." />
+            <marker date="1441850206000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1441850206000" expanded="true" signature="-1:-1" placeholder="SELECT {dist..." />
+            <marker date="1441850206000" expanded="true" signature="-1:-1" placeholder="select} FROM..." />
+            <marker date="1441850206000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..pg_tables..." />
+            <marker date="1441850206000" expanded="true" signature="-1:-1" placeholder="DROP TABLE &quot;..." />
+            <marker date="1441850206000" expanded="true" signature="-1:-1" placeholder="SELECT name .._table_metadata..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/organization/snippets/organization_list.html">
+    <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/package_metadata_fields.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state vertical-scroll-proportion="-8.041667">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/organization/read_base.html">
+    <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/package_context.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ckanext-dga-ga-report/ckanext/ga_report/templates/ga_report/publisher/read.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="89" column="28" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ckanext-dga-ga-report/ckanext/ga_report/plugin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ckanext-dga-ga-report/ckanext/ga_report/controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="156" column="16" selection-start-line="156" selection-start-column="16" selection-end-line="156" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ckan/ckan/controllers/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../ckan/ckan/controllers/package.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.903226">
-          <caret line="1238" column="49" selection-start-line="1236" selection-start-column="6" selection-end-line="1238" selection-end-column="49" />
+        <state vertical-scroll-proportion="-4.2580647">
+          <caret line="951" column="0" selection-start-line="951" selection-start-column="0" selection-end-line="951" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/resource_form.html">
+    <entry file="file://$PROJECT_DIR$/../ckanext-agls/ckanext/agls/plugin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-4.9259257">
+          <caret line="189" column="20" selection-start-line="189" selection-start-column="13" selection-end-line="189" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/resource_info.html">
+    <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/home/snippets/stats.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.307693">
-          <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ckan/ckan/templates/package/resource_read.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="60.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ckan/ckan/templates/package/snippets/resource_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ckan/ckan/templates/package/snippets/resource_item.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="28.461538">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ckan/ckan/templates/package/snippets/resource_info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ckan/ckan/lib/helpers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.83871">
-          <caret line="1555" column="16" selection-start-line="1555" selection-start-column="16" selection-end-line="1555" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/package/read.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ckan/ckan/lib/formatters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="149" column="4" selection-start-line="149" selection-start-column="4" selection-end-line="149" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/package/resource_read.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ckan/ckan/lib/uploader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="152" column="8" selection-start-line="152" selection-start-column="8" selection-end-line="152" selection-end-column="8" />
+        <state vertical-scroll-proportion="-5.0">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding>
+            <marker date="1441927041000" expanded="true" signature="1753:1764" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ckanext/datagovau/plugin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="83" column="46" selection-start-line="83" selection-start-column="46" selection-end-line="83" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ckanext/datagovau/theme/public/css/datagovau.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.35484">
-          <caret line="194" column="24" selection-start-line="194" selection-start-column="24" selection-end-line="194" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../twothree/src/ckan/ckan/model/user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41493776">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ckanext-dga-ga-report/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ckanext-dga-ga-report/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ckanext-dga-ga-report/README.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="41" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ckanext-dga-ga-report/ckanext/ga_report/templates/ga_report/ga_util.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="86" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ckanext-dga-ga-report/ckanext/ga_report/templates/ga_report/site/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="83" column="73" selection-start-line="83" selection-start-column="60" selection-end-line="83" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ckanext-dga-ga-report/ckanext/ga_report/templates/ga_report/site/js_strings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ckanext-dga-ga-report/ckanext/ga_report/templates/ga_report/site/_util.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../twothree/src/ckan/ckanext/datastore/commands.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../twothree/src/ckan/ckanext/datastore/logic/action.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="353" column="0" selection-start-line="353" selection-start-column="0" selection-end-line="353" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../twothree/src/ckan/ckanext/datastore/controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../twothree/src/ckan/ckan/plugins/core.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="254" column="0" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../twothree/src/ckan/ckanext/datapusher/plugin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../twothree/src/ckan/ckanext/datastore/plugin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.83871">
-          <caret line="396" column="0" selection-start-line="396" selection-start-column="0" selection-end-line="396" selection-end-column="0" />
+          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
           <folding>
-            <element signature="e#0#10#0" expanded="false" />
+            <marker date="1441933161000" expanded="true" signature="1023:1167" placeholder="select title..related_dataset..." />
+            <marker date="1441933161000" expanded="true" signature="1413:1562" placeholder="select count..package..." />
+            <marker date="1441933161000" expanded="true" signature="1649:1816" placeholder="select count..package..." />
+            <marker date="1441933161000" expanded="true" signature="1649:1936" placeholder="select count..package..." />
+            <marker date="1441933161000" expanded="true" signature="1856:1898" placeholder="select packa..package_extra..." />
+            <marker date="1441933161000" expanded="true" signature="2131:2280" placeholder="select count..related..." />
+            <marker date="1441933161000" expanded="true" signature="2379:2664" placeholder="select count..resource..." />
+            <marker date="1441933161000" expanded="true" signature="2521:2640" placeholder="select disti..package..." />
+            <marker date="1441933161000" expanded="true" signature="2807:2905" placeholder="SELECT name .._table_metadata..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/map.kml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.047505938">
-          <caret line="1" column="44" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../twothree/src/ckan/ckanext/datastore/db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="981" column="0" selection-start-line="981" selection-start-column="0" selection-end-line="981" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ckanext-dga-ga-report/ckanext/ga_report/templates/ga_report/site/layout_base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="143" column="68" selection-start-line="143" selection-start-column="68" selection-end-line="143" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ckanext-agls/ckanext/agls/controller.py">
+    <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/package/search.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#24#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../twothree/src/ckan/ckan/logic/action/update.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9128631">
-          <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/fix-contact-point.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.004149378">
-          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/budgetmove.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ckanext-dga-ga-report/ckanext/ga_report/helpers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ckanext-dga-ga-report/ckanext/ga_report/download_analytics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="479" column="38" selection-start-line="479" selection-start-column="35" selection-end-line="479" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ckanext-dga-ga-report/ckanext/ga_report/ga_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="215" column="105" selection-start-line="215" selection-start-column="8" selection-end-line="215" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/fix-wms-extent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08713693">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../twothree/src/ckan/ckan/controllers/package.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16597511">
-          <caret line="603" column="37" selection-start-line="603" selection-start-column="37" selection-end-line="603" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../twothree/lib/python2.7/site-packages/sqlalchemy/engine/default.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62240666">
-          <caret line="441" column="0" selection-start-line="441" selection-start-column="0" selection-end-line="441" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../twothree/src/ckan/development.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="85" column="78" selection-start-line="85" selection-start-column="78" selection-end-line="85" selection-end-column="78" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ckanext-agls/ckanext/agls/plugin.py">
+    <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/package_basic_fields.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="244" column="0" selection-start-line="244" selection-start-column="0" selection-end-line="244" selection-end-column="0" />
+        <state vertical-scroll-proportion="-13.041667">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ckanext/datagovau/theme/public/js/datagovau.js">
+    <entry file="file://$PROJECT_DIR$/../ckanext-agls/ckanext/agls/templates/snippets/package_item.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70640177">
-          <caret line="109" column="3" selection-start-line="109" selection-start-column="3" selection-end-line="109" selection-end-column="3" />
+        <state vertical-scroll-proportion="-25.0">
+          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/resources_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5210918">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -1575,7 +729,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>CKAN23 Python 2.7.6 virtualenv at ~/ckan/lib/twothree interpreter library</last-edited>
+          <last-edited>Python 2.7.10 (/usr/local/bin/python) interpreter library</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1587,7 +741,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>CKAN23 Python 2.7.6 virtualenv at ~/ckan/lib/twothree</last-edited>
+          <last-edited>Python 2.7.10 (/usr/local/bin/python)</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1599,7 +753,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>ckanext-s3multipart</last-edited>
+          <last-edited>ckanext-agls</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1612,6 +766,7 @@
       </state>
       <state key="ProjectJDKs.UI">
         <settings>
+          <last-edited>Python 2.7.10 virtualenv at /usr/lib/ckan/default</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1623,7 +778,6 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>CKAN23 Python 2.7.6 virtualenv at ~/ckan/lib/twothree interpreter library</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
