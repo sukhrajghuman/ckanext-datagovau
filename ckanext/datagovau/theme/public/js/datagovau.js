@@ -110,7 +110,11 @@ function gazSearch(gazURL) {
   }
 }
 
-window.onload = function () {
+    var dga_prev_handler = window.onload;
+    window.onload = function () {
+        if (dga_prev_handler) {
+            dga_prev_handler();
+        }
   addAltToAvatar();
   addTextToI();
   addTitleToSearch();
