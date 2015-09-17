@@ -96,6 +96,34 @@ class DataGovAuPlugin(plugins.SingletonPlugin,
     plugins.implements(plugins.ITemplateHelpers, inherit=False)
     plugins.implements(plugins.IAuthFunctions)
     plugins.implements(plugins.IActions, inherit=True)
+    plugins.implements(plugins.IPackageController, inherit=True)
+    plugins.implements(plugins.IFacets, inherit=True)
+
+    def dataset_facets(self, facets, package_type):
+        if 'jurisdiction' in facets:
+            facets['jurisdiction'] = 'Jurisdiction'
+        if 'unpublished' in facets:
+            facets['unpublished'] = 'Published Status'
+        return facets
+
+    def after_search(self, search_results, data_dict):
+        if 'unpublished' in search_results['facets']:
+            search_results['facets']['unpublished']['Published datasets'] = search_results['count'] - search_results['facets']['unpublished'].get('True',0)
+            if 'True' in search_results['facets']['unpublished']:
+                search_results['facets']['unpublished']['Unpublished datasets'] = search_results['facets']['unpublished']['True']
+                del search_results['facets']['unpublished']['True']
+            restructured_facet = {
+                'title': 'unpublished',
+                'items': []
+                }
+            for key_, value_ in search_results['facets']['unpublished'].items():
+                new_facet_dict = {}
+                new_facet_dict['name'] = key_
+                new_facet_dict['display_name'] = key_
+                new_facet_dict['count'] = value_
+                restructured_facet['items'].append(new_facet_dict)
+            search_results['search_facets']['unpublished'] = restructured_facet
+        return search_results
 
     def get_auth_functions(self):
         return {'related_create': related_create}
