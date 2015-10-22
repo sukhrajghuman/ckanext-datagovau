@@ -1,21 +1,16 @@
-import logging
-
 import ckan.plugins as plugins
 import ckan.lib as lib
-import ckan.lib.dictization.model_dictize as model_dictize
 import ckan.plugins.toolkit as tk
 import ckan.model as model
 import ckan.logic as logic
+import ckanext.datastore.db as datastore_db
 import os
-from pylons import config
 
-from sqlalchemy import orm
-import ckan.model
 
 import ckanext.datagovau.action as action
-from ckan.lib.plugins import DefaultGroupForm
 from ckan.lib.plugins import DefaultOrganizationForm
 from ckan.lib import uploader, formatters
+
 # get user created datasets and those they have edited
 def get_user_datasets(user_dict):
     created_datasets_list = user_dict['datasets']
@@ -45,7 +40,10 @@ def get_ddg_site_statistics():
     result = model.Session.execute("select count(*) from package where package.state='active' "
                                    "and package.type ='dataset' and package.private = 'f' ").first()[0]
     stats['dataset_count'] = result
-    stats['group_count'] = len(logic.get_action('group_list')({}, {}))
+    result = model.Session.execute("select count(*) from package where package.state='active' "
+                                   "and package.type ='dataset' and package.private = 'f' and package.id in "
+                                   "(select package_id from package_extra where key = 'unpublished' and value='True') ").first()[0]
+    stats['unpub_data_count'] = result
     stats['organization_count'] = len(
         logic.get_action('organization_list')({}, {}))
     result = model.Session.execute(
@@ -56,11 +54,18 @@ def get_ddg_site_statistics():
     result = model.Session.execute(
         '''select count(*) from resource
         where resource.state='active' and        
-        (webstore_url = 'active' or format='wms')
+        (format='wms')
         and package_id not IN
         (select distinct package_id from package INNER JOIN package_extra
         on package.id = package_extra.package_id where key = 'harvest_portal')
         ''').first()[0]
+    result = result + len(datastore_db.get_all_resources_ids_in_datastore())
+    #resources_sql = sqlalchemy.text(u'''SELECT name FROM "_table_metadata"
+    #                                    WHERE alias_of IS NULL''')
+    #extras = {'url': config.get('ckan.datastore.read_url')}
+    #query = sqlalchemy.engine_from_config(config,
+    #                                      'ckan.datastore.sqlalchemy.',
+    #                                      **extras).execute(resources_sql)
     stats['api_count'] = result
 
     return stats
@@ -91,6 +96,34 @@ class DataGovAuPlugin(plugins.SingletonPlugin,
     plugins.implements(plugins.ITemplateHelpers, inherit=False)
     plugins.implements(plugins.IAuthFunctions)
     plugins.implements(plugins.IActions, inherit=True)
+    plugins.implements(plugins.IPackageController, inherit=True)
+    plugins.implements(plugins.IFacets, inherit=True)
+
+    def dataset_facets(self, facets, package_type):
+        if 'jurisdiction' in facets:
+            facets['jurisdiction'] = 'Jurisdiction'
+        if 'unpublished' in facets:
+            facets['unpublished'] = 'Published Status'
+        return facets
+
+    def after_search(self, search_results, data_dict):
+        if 'unpublished' in search_results['facets']:
+            search_results['facets']['unpublished']['Published datasets'] = search_results['count'] - search_results['facets']['unpublished'].get('True',0)
+            if 'True' in search_results['facets']['unpublished']:
+                search_results['facets']['unpublished']['Unpublished datasets'] = search_results['facets']['unpublished']['True']
+                del search_results['facets']['unpublished']['True']
+            restructured_facet = {
+                'title': 'unpublished',
+                'items': []
+                }
+            for key_, value_ in search_results['facets']['unpublished'].items():
+                new_facet_dict = {}
+                new_facet_dict['name'] = key_
+                new_facet_dict['display_name'] = key_
+                new_facet_dict['count'] = value_
+                restructured_facet['items'].append(new_facet_dict)
+            search_results['search_facets']['unpublished'] = restructured_facet
+        return search_results
 
     def get_auth_functions(self):
         return {'related_create': related_create}
