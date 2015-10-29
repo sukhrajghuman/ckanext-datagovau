@@ -44,8 +44,9 @@ def get_ddg_site_statistics():
                                    "and package.type ='dataset' and package.private = 'f' and package.id in "
                                    "(select package_id from package_extra where key = 'unpublished' and value='True') ").first()[0]
     stats['unpub_data_count'] = result
-    stats['organization_count'] = len(
-        logic.get_action('organization_list')({}, {}))
+
+    stats['open_count'] = logic.get_action('package_search')({}, {"fq":"isopen:true"})['count']
+
     result = model.Session.execute(
         '''select count(*) from related r
            left join related_dataset rd on r.id = rd.related_id
@@ -60,12 +61,7 @@ def get_ddg_site_statistics():
         on package.id = package_extra.package_id where key = 'harvest_portal')
         ''').first()[0]
     result = result + len(datastore_db.get_all_resources_ids_in_datastore())
-    #resources_sql = sqlalchemy.text(u'''SELECT name FROM "_table_metadata"
-    #                                    WHERE alias_of IS NULL''')
-    #extras = {'url': config.get('ckan.datastore.read_url')}
-    #query = sqlalchemy.engine_from_config(config,
-    #                                      'ckan.datastore.sqlalchemy.',
-    #                                      **extras).execute(resources_sql)
+
     stats['api_count'] = result
 
     return stats
