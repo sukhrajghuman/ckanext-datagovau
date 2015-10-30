@@ -4,12 +4,13 @@ import ckan.plugins.toolkit as tk
 import ckan.model as model
 import ckan.logic as logic
 import ckanext.datastore.db as datastore_db
-import os
+import os, time
 
 
 import ckanext.datagovau.action as action
 from ckan.lib.plugins import DefaultOrganizationForm
 from ckan.lib import uploader, formatters
+import feedparser
 
 # get user created datasets and those they have edited
 def get_user_datasets(user_dict):
@@ -80,6 +81,11 @@ def get_resource_file_size(rsc):
         return value
     return None
 
+def blogfeed():
+    d = feedparser.parse('https://blog.data.gov.au/blogs/rss.xml')
+    for entry in d.entries:
+        entry.date = time.strftime("%a, %d %b %Y",entry.published_parsed)
+    return d
 
 class DataGovAuPlugin(plugins.SingletonPlugin,
                       tk.DefaultDatasetForm):
@@ -138,7 +144,7 @@ class DataGovAuPlugin(plugins.SingletonPlugin,
 
     def get_helpers(self):
         return {'get_user_datasets': get_user_datasets, 'get_related_dataset': get_related_dataset,
-                'get_ddg_site_statistics': get_ddg_site_statistics, 'get_resource_file_size': get_resource_file_size}
+                'get_ddg_site_statistics': get_ddg_site_statistics, 'get_resource_file_size': get_resource_file_size, 'blogfeed': blogfeed}
 
 
     # IActions
