@@ -1,6 +1,12 @@
 {% ckan_extends %}
 
   {% block metadata_fields %}
+{% call form.checkbox('zip_extract', checked=data.zip_extract, label='Extract Resources from Zip Files', value='True') %}
+<br/>
+Whether any resources inside zip files should be extracted into separate resources.
+
+{% endcall %}
+
     {% call form.input('last_modified', label=_('Last Modified'), id='field-last_modified',
 placeholder=_('When the file uploaded was last modified'),
 value=data.last_modified, error=errors.last_modified, classes=['control-full'], is_required='true') %}
