@@ -9,6 +9,7 @@ import ckanapi  # https://github.com/open-data/ckanapi
 import sys, errno, tempfile, os, urllib, subprocess
 from dateutil import parser
 from datetime import datetime
+from datetime import datetime
 import zipfile
 import zlib
 
@@ -35,81 +36,77 @@ activity_list = ckan.action.package_activity_list(id=dataset['id'])
 # checking that bot was not last editor ensures no infinite loop
 # todo scan for last date of non-bot edit
 # Or last modified date could be compared with zip_extracted resources scan dates set.
-if len(activity_list) > 0 and activity_list[0]['user_id'] == "68b91a41-7b08-47f1-8434-780eb9f4332d":
+if len(activity_list) > 0 and activity_list[0]['user_id'] == "68b91a41-7b08-47f1-8434-780eb9f4332d" \
+    and activity_list[0]['timestamp'].split("T")[0] != datetime.now().isoformat().split("T")[0]:
     print 'last editor was bot'
     sys.exit(0)
 print "Data modified: " + str(parser.parse(data_modified_date))
-zip_resource = None
+
 for resource in dataset['resources']:
     if "zip" in resource['format'].lower():
         zip_resource = resource
-        break
-if not zip_resource:
-    print 'no zip resources found'
-    sys.exit(0)
-if 'zip_extract' not in zip_resource or zip_resource.get('zip_extract', '') != 'True':
-    print 'zip resource ' + resource['name'] + ' not opted in for extraction: ' + zip_resource.get('zip_extract', '')
-    sys.exit(0)
+        if 'zip_extract' not in zip_resource or zip_resource.get('zip_extract', '') != 'True':
+            print 'zip resource ' + resource['name'] + ' ('+resource['id']+ ') not opted in for extraction: ' + zip_resource.get('zip_extract', '')
+            continue
+
+        # download resource to tmpfile
+        tempdir = tempfile.mkdtemp(dataset['id'])
+        os.chdir(tempdir)
+        print tempdir + " created"
+
+        print "using ZIP file " + zip_resource['url'].replace('https', 'http')
+        (filepath, headers) = urllib.urlretrieve(zip_resource['url'].replace('https', 'http'), "input.zip")
+        print "zip downloaded"
+        # use unzip program rather than python's zipfile library for maximum compatibility
+        rv = subprocess.call(['unzip', filepath])
+        # with ZipFile(filepath, 'r') as myzip:
+        #	myzip.extractall()
+        print "zip unzipped"
 
 
-# download resource to tmpfile
-tempdir = tempfile.mkdtemp(dataset['id'])
-os.chdir(tempdir)
-print tempdir + " created"
-
-print "using ZIP file " + zip_resource['url'].replace('https', 'http')
-(filepath, headers) = urllib.urlretrieve(zip_resource['url'].replace('https', 'http'), "input.zip")
-print "zip downloaded"
-# use unzip program rather than python's zipfile library for maximum compatibility
-rv = subprocess.call(['unzip', filepath])
-# with ZipFile(filepath, 'r') as myzip:
-#	myzip.extractall()
-print "zip unzipped"
-
-
-interesting_extensions = ["csv", "xls", "xlsx", "json", "geojson", "shp", "kml"]
-# Multiple files transform to multiple file resources
-resource_files = []
-# Multiple folders transform to multiple zip file resources
-resource_dirs = []
-for f in os.listdir(tempdir):
-    if os.path.isfile(os.path.join(tempdir, f)):
-        if f.split('.').pop().lower() in interesting_extensions:
-            resource_files.append(f)
-    if os.path.isdir(os.path.join(tempdir, f)):
-        # only zip up folders if they contain at least one interesting file
-        interesting_dir_files = []
-        for g in os.listdir(os.path.join(tempdir, f)):
-            if g.split('.').pop().lower() in interesting_extensions:
-                interesting_dir_files.append(os.path.join(f, g))
-                break
-        if len(interesting_dir_files) > 0:
-            resource_dirs.append(f)
+        interesting_extensions = ["csv", "xls", "xlsx", "json", "geojson", "shp", "kml"]
+        # Multiple files transform to multiple file resources
+        resource_files = []
+        # Multiple folders transform to multiple zip file resources
+        resource_dirs = []
+        for f in os.listdir(tempdir):
+            if os.path.isfile(os.path.join(tempdir, f)):
+                if f.split('.').pop().lower() in interesting_extensions:
+                    resource_files.append(f)
+            if os.path.isdir(os.path.join(tempdir, f)):
+                # only zip up folders if they contain at least one interesting file
+                interesting_dir_files = []
+                for g in os.listdir(os.path.join(tempdir, f)):
+                    if g.split('.').pop().lower() in interesting_extensions:
+                        interesting_dir_files.append(os.path.join(f, g))
+                        break
+                if len(interesting_dir_files) > 0:
+                    resource_dirs.append(f)
 
 
-def update_resource(file, path):
-    print "updating/creating "+file
-    existing = False
-    for resource in dataset['resources']:
-        if resource['name'] == file:
-            existing = True
-            resource['last_modified'] = datetime.now().isoformat()
-            print ckan.call_action('resource_update', resource, files={'upload': open(path)})
-    if not existing:
-        print ckan.call_action('resource_create', {"package_id": dataset['id'], "name": file, "url": file,
-                                                   "zip_extracted": "True", "last_modified": datetime.now().isoformat()},
-                                                    files={'upload': open(path)})
+        def update_resource(file, path):
+            print "updating/creating "+file
+            existing = False
+            for resource in dataset['resources']:
+                if resource['name'] == file:
+                    existing = True
+                    resource['last_modified'] = datetime.now().isoformat()
+                    print ckan.call_action('resource_update', resource, files={'upload': open(path)})
+            if not existing:
+                print ckan.call_action('resource_create', {"package_id": dataset['id'], "name": file, "url": file,
+                                                           "zip_extracted": "True", "last_modified": datetime.now().isoformat()},
+                                                            files={'upload': open(path)})
 
-print resource_files
-# Check for single csv/xls/shp/kml files - no action required
-if len(resource_files) > 1:
-    for file in resource_files:
-        path = os.path.join(tempdir, file)
-        update_resource(file, path)
+        print resource_files
+        # Check for single csv/xls/shp/kml files - no action required
+        if len(resource_files) > 1:
+            for file in resource_files:
+                path = os.path.join(tempdir, file)
+                update_resource(file, path)
 
-print resource_dirs
-for dir in resource_dirs:
-    zipf = zipfile.ZipFile(dir + '.zip', 'w', zipfile.ZIP_DEFLATED)
-    zipdir(dir, zipf)
-    zipf.close()
-    update_resource(dir, dir + '.zip')
+        print resource_dirs
+        for dir in resource_dirs:
+            zipf = zipfile.ZipFile(dir + '.zip', 'w', zipfile.ZIP_DEFLATED)
+            zipdir(dir, zipf)
+            zipf.close()
+            update_resource(dir, dir + '.zip')
