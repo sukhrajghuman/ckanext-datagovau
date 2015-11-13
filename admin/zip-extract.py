@@ -94,6 +94,7 @@ for resource in dataset['resources']:
                     print ckan.call_action('resource_update', resource, files={'upload': open(path)})
             if not existing:
                 print ckan.call_action('resource_create', {"package_id": dataset['id'], "name": file, "url": file,
+                                                           "parent_res": zip_resource['id'],
                                                            "zip_extracted": "True", "last_modified": datetime.now().isoformat()},
                                                             files={'upload': open(path)})
 
