@@ -54,35 +54,21 @@ for resource in dataset['resources']:
         os.chdir(tempdir)
         print tempdir + " created"
 
+        # urlretrieve does not work with https. We can't really get files through an https connection without
+        # going through a proxy
         print "using ZIP file " + zip_resource['url'].replace('https', 'http')
         (filepath, headers) = urllib.urlretrieve(zip_resource['url'].replace('https', 'http'), "input.zip")
         print "zip downloaded"
         # use unzip program rather than python's zipfile library for maximum compatibility
         rv = subprocess.call(['unzip', filepath])
-        # with ZipFile(filepath, 'r') as myzip:
-        #	myzip.extractall()
+        #with ZipFile(filepath, 'r') as myzip:
+        #    myzip.extractall()
+        #zipfile.ZipFile(filepath, 'r').extractall()
         print "zip unzipped"
-
 
         interesting_extensions = ["csv", "xls", "xlsx", "json", "geojson", "shp", "kml"]
         # Multiple files transform to multiple file resources
         resource_files = []
-        # Multiple folders transform to multiple zip file resources
-        resource_dirs = []
-        for f in os.listdir(tempdir):
-            if os.path.isfile(os.path.join(tempdir, f)):
-                if f.split('.').pop().lower() in interesting_extensions:
-                    resource_files.append(f)
-            if os.path.isdir(os.path.join(tempdir, f)):
-                # only zip up folders if they contain at least one interesting file
-                interesting_dir_files = []
-                for g in os.listdir(os.path.join(tempdir, f)):
-                    if g.split('.').pop().lower() in interesting_extensions:
-                        interesting_dir_files.append(os.path.join(f, g))
-                        break
-                if len(interesting_dir_files) > 0:
-                    resource_dirs.append(f)
-
 
         def update_resource(file, path):
             print "updating/creating "+file
@@ -98,16 +84,30 @@ for resource in dataset['resources']:
                                                            "zip_extracted": "True", "last_modified": datetime.now().isoformat()},
                                                             files={'upload': open(path)})
 
-        print resource_files
-        # Check for single csv/xls/shp/kml files - no action required
-        if len(resource_files) > 1:
-            for file in resource_files:
-                path = os.path.join(tempdir, file)
-                update_resource(file, path)
+        def count_interesting(path):
+            for g in os.listdir(path):
+                if g.split('.').pop().lower() in interesting_extensions:
+                    return 1
+            return 0
 
-        print resource_dirs
-        for dir in resource_dirs:
-            zipf = zipfile.ZipFile(dir + '.zip', 'w', zipfile.ZIP_DEFLATED)
-            zipdir(dir, zipf)
-            zipf.close()
-            update_resource(dir, dir + '.zip')
+        def recurse_directory(path):
+            if (len([fn for fn in os.listdir(path)]) < 3 and len([ndir for ndir in os.listdir(path) if os.path.isdir(ndir)]) == 1):
+                for f in os.listdir(path):
+                    if os.path.isdir(os.path.join(path,f)):
+                        return recurse_directory(os.path.join(path,f))
+
+            os.chdir(path)
+            numInteresting = len([f for f in os.listdir(path) if (os.path.isfile(os.path.join(path, f)) and (f.split('.').pop().lower() in interesting_extensions))])
+            for f in os.listdir(path):
+                if os.path.isfile(os.path.join(path, f)) and numInteresting > 1:
+                    if f.split('.').pop().lower() in interesting_extensions:
+                        update_resource(f, os.path.join(path, f))
+                if os.path.isdir(os.path.join(path, f)):
+                    # only zip up folders if they contain at least one interesting file
+                    if count_interesting(os.path.join(path, f)) > 0:
+                        zipf = zipfile.ZipFile(f + '.zip', 'w', zipfile.ZIP_DEFLATED)
+                        zipdir(f, zipf)
+                        zipf.close()
+                        update_resource(f, f+'.zip')
+
+        recurse_directory(tempdir)
