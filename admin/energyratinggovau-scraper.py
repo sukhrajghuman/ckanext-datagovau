@@ -13,8 +13,9 @@ energyrating.gov.au scraper for data.gov.au
 
 import ckanapi # get from https://github.com/open-data/ckanapi
 
-import os, hashlib
+import os
 import urllib2
+import time
 from os.path import basename
 
 import sys
@@ -64,46 +65,73 @@ def fetchURL(url):
         return (None, None, None)
 
 # Instantiate the CKAN client.
+api_key = 'c3557c21-bfda-44e7-a5c3-c97de603d56b'
 server = 'data.gov.au'
 
 
 ckandirect = ckanapi.RemoteCKAN('http://' + server, apikey=api_key)
 
-category_urls = {
+household_category_urls = {
     "air conditioners": "http://reg.energyrating.gov.au/comparator/product_types/64/search/?&export_format=csv",
     "clothes dryers": "http://reg.energyrating.gov.au/comparator/product_types/35/search/?&export_format=csv",
-    "dishwashers": "http://reg.energyrating.gov.au/comparator/product_types/41/search/?&export_format=csv",
     "clothes washers": "http://reg.energyrating.gov.au/comparator/product_types/49/search/?&export_format=csv",
+    "computer monitors": "http://reg.energyrating.gov.au/comparator/product_types/74/search/?&export_format=csv",
+    "dishwashers": "http://reg.energyrating.gov.au/comparator/product_types/41/search/?&export_format=csv",
     "fridges and freezers": "http://reg.energyrating.gov.au/comparator/product_types/28/search/?&export_format=csv",
-    "televisions": "http://reg.energyrating.gov.au/comparator/product_types/32/search/?&export_format=csv",
-    "computer monitors": "http://reg.energyrating.gov.au/comparator/product_types/74/search/?&export_format=csv"
+    "televisions": "http://reg.energyrating.gov.au/comparator/product_types/32/search/?&export_format=csv"
+}
+
+unlabeled_category_urls = {
+    "air conditioners": "http://reg.energyrating.gov.au/comparator/product_types/64/search/?&export_format=csv",
+    "ballasts": "http://reg.energyrating.gov.au/comparator/product_types/51/search/?&export_format=csv",
+    "chillers": "http://reg.energyrating.gov.au/comparator/product_types/59/search/?&export_format=csv",
+    "close control air conditioners": "http://reg.energyrating.gov.au/comparator/product_types/60/search/?&export_format=csv",
+    "commercial refrigerators": "http://reg.energyrating.gov.au/comparator/product_types/37/search/?&export_format=csv",
+    "compact fluorescent lamps": "http://reg.energyrating.gov.au/comparator/product_types/61/search/?&export_format=csv",
+    "computers": "http://reg.energyrating.gov.au/comparator/product_types/73/search/?&export_format=csv",
+    "distribution transformers": "http://reg.energyrating.gov.au/comparator/product_types/38/search/?&export_format=csv",
+    "electric motors": "http://reg.energyrating.gov.au/comparator/product_types/54/search/?&export_format=csv",
+    "elv lighting converter/transformer": "http://reg.energyrating.gov.au/comparator/product_types/39/search/?&export_format=csv",
+    "external power supply": "http://reg.energyrating.gov.au/comparator/product_types/55/search/?&export_format=csv",
+    "hot water heaters (electric)": "http://reg.energyrating.gov.au/comparator/product_types/58/search/?&export_format=csv",
+    "hot water heaters (gas)": "http://reg.energyrating.gov.au/comparator/product_types/62/search/?&export_format=csv",
+    "incandescent lamps": "http://reg.energyrating.gov.au/comparator/product_types/40/search/?&export_format=csv",
+    "linear fluorescent lamps": "http://reg.energyrating.gov.au/comparator/product_types/34/search/?&export_format=csv",
+    "set top boxes": "http://reg.energyrating.gov.au/comparator/product_types/33/search/?&export_format=csv"
+}
+
+energy_pkgs = {
+    "energy-rating-for-household-appliances": household_category_urls,
+    "energy-rating-data-for-household-appliances-non-labelled-products": unlabeled_category_urls
 }
 
 if __name__ == "__main__":
-        pkg_name = 'energy-rating-for-household-appliances'
-        pkg = ckandirect.action.package_show(id=pkg_name)
         #print pkg
-        for resource in pkg['resources']:
-            print "Updating resource: " + resource['name']
-            resource_category = resource['name'].split('-')[0].strip()
-            if resource_category.lower() not in category_urls:
-                print ("Appliance category not found: " + resource_category)
-            else:
-                (returned_filename, mime_type, content) = fetchURL(category_urls[resource_category.lower()])
-     		    #print content
-                suffix = "_"+returned_filename.encode("ascii", "ignore").replace("/", "")
-                #add file extension if missing
-                if len(suffix) < 5 or (suffix[-4] != "." and suffix[-5] != "."):
-                    suffix = suffix + "." + "csv"
-                if content != None :
-                    tf = tempfile.NamedTemporaryFile(suffix=suffix)
-                    tfName = os.path.abspath(tf.name)
-                    print "CSV temporarily downloaded to " +tfName
-                    tf.seek(0)
-                    tf.write(content)
-                    tf.flush()
-                    resource['name'] = resource_category + " - " + returned_filename
-                    ckandirect.action.resource_update(id =resource['id'], name=resource['name'], data_dict=resource, upload=open(tfName))
-                    print "Resource successfully updated with new data URL"
+        for pkg_name, category_urls in energy_pkgs.iteritems():
+            pkg = ckandirect.action.package_show(id=pkg_name)
+            for resource in pkg['resources']:
+                print "Updating resource: " + resource['name']
+                resource_category = resource['name'].split('-')[0].strip()
+                if resource_category.lower() not in category_urls:
+                    print ("Appliance category not found: " + resource_category)
                 else:
-                    print "Error uploading file: " + returned_filename
+                    (returned_filename, mime_type, content) = fetchURL(category_urls[resource_category.lower()])
+                    #print content
+                    suffix = "_"+returned_filename.encode("ascii", "ignore").replace("/", "")
+                    #add file extension if missing
+                    if len(suffix) < 5 or (suffix[-4] != "." and suffix[-5] != "."):
+                        suffix = suffix + "." + "csv"
+                    if content != None :
+                        tf = tempfile.NamedTemporaryFile(suffix=suffix)
+                        tfName = os.path.abspath(tf.name)
+                        print "CSV temporarily downloaded to " +tfName
+                        tf.seek(0)
+                        tf.write(content)
+                        tf.flush()
+                        resource['name'] = resource_category + " - " + returned_filename
+                        time1 = time.time()
+                        ckandirect.action.resource_update(id =resource['id'], name=resource['name'], data_dict=resource, upload=open(tfName))
+                        time2 = time.time()
+                        print "Resource successfully updated with new data URL in %0.3f ms" % ((time2-time1)*1000.0)
+                    else:
+                        print "Error uploading file: " + returned_filename
