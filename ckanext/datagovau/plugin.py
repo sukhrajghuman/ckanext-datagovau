@@ -38,32 +38,25 @@ def related_create(context, data_dict=None):
 
 def get_ddg_site_statistics():
     stats = {}
-    result = model.Session.execute("select count(*) from package where package.state='active' "
-                                   "and package.type ='dataset' and package.private = 'f' ").first()[0]
-    stats['dataset_count'] = result
-    result = model.Session.execute("select count(*) from package where package.state='active' "
-                                   "and package.type ='dataset' and package.private = 'f' and package.id in "
-                                   "(select package_id from package_extra where key = 'unpublished' and value='True') ").first()[0]
-    stats['unpub_data_count'] = result
-
-    stats['open_count'] = logic.get_action('package_search')({}, {"fq":"isopen:true"})['count']
+    stats['dataset_count'] = logic.get_action('package_search')({}, {"rows": 1})['count']
+    stats['group_count'] = len(logic.get_action('group_list')({}, {}))
+    stats['organization_count'] = len(logic.get_action('organization_list')({}, {}))
 
     result = model.Session.execute(
         '''select count(*) from related r
            left join related_dataset rd on r.id = rd.related_id
            where rd.status = 'active' or rd.id is null''').first()[0]
     stats['related_count'] = result
-    result = model.Session.execute(
-        '''select count(*) from resource
-        where resource.state='active' and        
-        (format='wms')
-        and package_id not IN
-        (select distinct package_id from package INNER JOIN package_extra
-        on package.id = package_extra.package_id where key = 'harvest_portal')
-        ''').first()[0]
-    result = result + len(datastore_db.get_all_resources_ids_in_datastore())
 
-    stats['api_count'] = result
+    stats['unpub_data_count'] = 0
+    for fDict in logic.get_action('package_search')({}, {"facet.field":["unpublished"],"rows":1})['search_facets']['unpublished']['items']:
+        if fDict['name'] == "Unpublished datasets":
+            stats['unpub_data_count'] = fDict['count']
+            break
+
+    stats['open_count'] = logic.get_action('package_search')({}, {"fq":"isopen:true","rows":1})['count']
+
+    stats['api_count'] = logic.get_action('resource_search')({}, {"query":["format:wms"]})['count'] + len(datastore_db.get_all_resources_ids_in_datastore())
 
     return stats
 
