@@ -18,12 +18,15 @@ def get_user_datasets(user_dict):
     active_datasets_list = [x['data']['package'] for x in
                             lib.helpers.get_action('user_activity_list', {'id': user_dict['id']}) if
                             x['data'].get('package')]
-    raw_list = created_datasets_list + active_datasets_list
+    raw_list = sorted(created_datasets_list + active_datasets_list, key=lambda pkg: pkg['state'])
     filtered_dict = {}
     for dataset in raw_list:
         if dataset['id'] not in filtered_dict.keys():
             filtered_dict[dataset['id']] = dataset
     return filtered_dict.values()
+
+def get_user_datasets_public(user_dict):
+    return [pkg for pkg in get_user_datasets(user_dict) if pkg['state'] == 'active']
 
 
 def get_related_dataset(related_id):
@@ -136,7 +139,7 @@ class DataGovAuPlugin(plugins.SingletonPlugin,
         # config['licenses_group_url'] = 'http://%(ckan.site_url)/licenses.json'
 
     def get_helpers(self):
-        return {'get_user_datasets': get_user_datasets, 'get_related_dataset': get_related_dataset,
+        return {'get_user_datasets': get_user_datasets, 'get_related_dataset': get_related_dataset, 'get_user_datasets_public': get_user_datasets_public,
                 'get_ddg_site_statistics': get_ddg_site_statistics, 'get_resource_file_size': get_resource_file_size, 'blogfeed': blogfeed}
 
 

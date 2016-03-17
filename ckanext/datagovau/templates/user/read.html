@@ -6,8 +6,10 @@
     {% block page_heading %}{{ _('Datasets') }}{% endblock %}
   </h2>
   {% block package_list %}
-  {% if h.get_user_datasets(c.user_dict) %}
+  {% if c.is_sysadmin and h.get_user_datasets(c.user_dict) %}
     {% snippet 'snippets/package_list.html', packages=h.get_user_datasets(c.user_dict) %}
+  {% elif h.get_user_datasets(c.user_dict) %}
+    {% snippet 'snippets/package_list.html', packages=h.get_user_datasets_public(c.user_dict) %}
   {% else %}
 
     {% if c.is_myself %}
