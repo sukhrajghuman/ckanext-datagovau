@@ -14,11 +14,12 @@ import feedparser
 
 # get user created datasets and those they have edited
 def get_user_datasets(user_dict):
+    context = {'model': model, 'user': user_dict['name']}
     created_datasets_list = user_dict['datasets']
-    active_datasets_list = [x['data']['package'] for x in
+    active_datasets_list = [logic.get_action('package_show')(context, {'id': x['data']['package']['id']}) for x in
                             lib.helpers.get_action('user_activity_list', {'id': user_dict['id']}) if
                             x['data'].get('package')]
-    raw_list = sorted(created_datasets_list + active_datasets_list, key=lambda pkg: pkg['state'])
+    raw_list = sorted(active_datasets_list + created_datasets_list, key=lambda pkg: pkg['state'])
     filtered_dict = {}
     for dataset in raw_list:
         if dataset['id'] not in filtered_dict.keys():

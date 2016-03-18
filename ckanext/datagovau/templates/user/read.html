@@ -8,7 +8,7 @@
   {% block package_list %}
   {% if c.is_sysadmin and h.get_user_datasets(c.user_dict) %}
     {% snippet 'snippets/package_list.html', packages=h.get_user_datasets(c.user_dict) %}
-  {% elif h.get_user_datasets(c.user_dict) %}
+  {% elif h.get_user_datasets_public(c.user_dict) %}
     {% snippet 'snippets/package_list.html', packages=h.get_user_datasets_public(c.user_dict) %}
   {% else %}
 

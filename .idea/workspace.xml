@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fcf9c9a8-4c94-4dec-aba1-b090d97ae58a" name="Default" comment="">
+    <list default="true" id="fcf9c9a8-4c94-4dec-aba1-b090d97ae58a" name="Default" comment="- Do not display deleted/draft datasets to public users&#10;- Added sorting to user package display to have active packages displayed over ones that are deleted.&#10;- [SXTPDFINXZCB-56]">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ckanext-agls/ckanext-agls.iml" afterPath="$PROJECT_DIR$/../ckanext-agls/ckanext-agls.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ckanext/datagovau/plugin.py" afterPath="$PROJECT_DIR$/ckanext/datagovau/plugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ckanext/datagovau/templates/user/read.html" afterPath="$PROJECT_DIR$/ckanext/datagovau/templates/user/read.html" />
     </list>
     <ignored path="ckanext-datagovau.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,13 +34,23 @@
       <file leaf-file-name="plugin.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ckanext/datagovau/plugin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8148148">
-              <caret line="60" column="16" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.48876405">
+              <caret line="29" column="84" selection-start-line="29" selection-start-column="84" selection-end-line="29" selection-end-column="84" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
-                <marker date="1452642138000" expanded="true" signature="1047:1191" placeholder="select title... related_dataset" />
-                <marker date="1452642138000" expanded="true" signature="1695:1844" placeholder="select count... related" />
+                <marker date="1458259168000" expanded="true" signature="1327:1471" placeholder="select title... related_dataset" />
+                <marker date="1458259168000" expanded="true" signature="1975:2124" placeholder="select count... related" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="read.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/user/read.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.875">
+              <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -72,16 +84,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zip-extract.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/zip-extract.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -154,6 +156,7 @@
         <option value="$PROJECT_DIR$/ckanext/datagovau/templates/package/snippets/resources_list.html" />
         <option value="$PROJECT_DIR$/admin/zip-extract.py" />
         <option value="$PROJECT_DIR$/admin/energyratinggovau-scraper.py" />
+        <option value="$PROJECT_DIR$/ckanext/datagovau/templates/user/read.html" />
         <option value="$PROJECT_DIR$/ckanext/datagovau/plugin.py" />
       </list>
     </option>
@@ -168,10 +171,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="480" />
-    <option name="y" value="52" />
-    <option name="width" value="1440" />
-    <option name="height" value="826" />
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="987" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -245,6 +247,54 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="datagovau" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ckanext-datagovau" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ckanext-datagovau" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ckanext" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datagovau" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ckanext-datagovau" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ckanext-datagovau" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ckanext" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datagovau" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -546,11 +596,17 @@
       <option name="project" value="LOCAL" />
       <updated>1452557771284</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="- Do not display deleted/draft datasets to public users&#10;- Added sorting to user package display to have active packages displayed over ones that are deleted.&#10;- [SXTPDFINXZCB-56]">
+      <created>1458190222147</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1458190222147</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="480" y="52" width="1440" height="826" extended-state="0" />
+    <frame x="0" y="23" width="1920" height="987" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -591,7 +647,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- Extended the functionality of the extractor to work with zipfiles that contain only a single directory at their root." />
     <MESSAGE value="- Added non-labeled devices to auto harvester for energy ratings" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Added non-labeled devices to auto harvester for energy ratings" />
+    <MESSAGE value="- Do not display deleted/draft datasets to public users&#10;- Added sorting to user package display to have active packages displayed over ones that are deleted.&#10;- [SXTPDFINXZCB-56]" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Do not display deleted/draft datasets to public users&#10;- Added sorting to user package display to have active packages displayed over ones that are deleted.&#10;- [SXTPDFINXZCB-56]" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -603,16 +660,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/energyratinggovau-scraper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="119" column="10" selection-start-line="0" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
-          <folding>
-            <element signature="e#460#522#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ckanext/datagovau/action.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -635,7 +682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -685,8 +731,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
-            <marker date="1452642138000" expanded="true" signature="1047:1191" placeholder="select title... related_dataset" />
-            <marker date="1452642138000" expanded="true" signature="1695:1844" placeholder="select count... related" />
+            <marker date="1458259168000" expanded="true" signature="1327:1471" placeholder="select title... related_dataset" />
+            <marker date="1458259168000" expanded="true" signature="1975:2124" placeholder="select count... related" />
           </folding>
         </state>
       </provider>
@@ -697,8 +743,8 @@
           <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
-            <marker date="1452642138000" expanded="true" signature="1047:1191" placeholder="select title... related_dataset" />
-            <marker date="1452642138000" expanded="true" signature="1695:1844" placeholder="select count... related" />
+            <marker date="1458259168000" expanded="true" signature="1327:1471" placeholder="select title... related_dataset" />
+            <marker date="1458259168000" expanded="true" signature="1975:2124" placeholder="select count... related" />
           </folding>
         </state>
       </provider>
@@ -714,7 +760,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -778,8 +823,8 @@
           <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
-            <marker date="1452642138000" expanded="true" signature="1047:1191" placeholder="select title... related_dataset" />
-            <marker date="1452642138000" expanded="true" signature="1695:1844" placeholder="select count... related" />
+            <marker date="1458259168000" expanded="true" signature="1327:1471" placeholder="select title... related_dataset" />
+            <marker date="1458259168000" expanded="true" signature="1975:2124" placeholder="select count... related" />
           </folding>
         </state>
       </provider>
@@ -795,7 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -841,8 +885,8 @@
           <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
-            <marker date="1452642138000" expanded="true" signature="1047:1191" placeholder="select title... related_dataset" />
-            <marker date="1452642138000" expanded="true" signature="1695:1844" placeholder="select count... related" />
+            <marker date="1458259168000" expanded="true" signature="1327:1471" placeholder="select title... related_dataset" />
+            <marker date="1458259168000" expanded="true" signature="1975:2124" placeholder="select count... related" />
           </folding>
         </state>
       </provider>
@@ -936,7 +980,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1008,14 +1051,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ckanext/datagovau/templates/user/read.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.875">
+          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ckanext/datagovau/plugin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8148148">
-          <caret line="60" column="16" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.48876405">
+          <caret line="29" column="84" selection-start-line="29" selection-start-column="84" selection-end-line="29" selection-end-column="84" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
-            <marker date="1452642138000" expanded="true" signature="1047:1191" placeholder="select title... related_dataset" />
-            <marker date="1452642138000" expanded="true" signature="1695:1844" placeholder="select count... related" />
+            <marker date="1458259168000" expanded="true" signature="1327:1471" placeholder="select title... related_dataset" />
+            <marker date="1458259168000" expanded="true" signature="1975:2124" placeholder="select count... related" />
           </folding>
         </state>
       </provider>
