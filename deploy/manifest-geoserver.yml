@@ -1,6 +1,7 @@
 buildpack: java_buildpack
-path: solr.war
+path: geoserver/geoserver.war
+memory: 2G
 env:
  JAVA_OPT: "-Dlog4j.debug=true"
 applications:
-- name: datagovau-dev-solr
+- name: datagovau-dev-geoserver

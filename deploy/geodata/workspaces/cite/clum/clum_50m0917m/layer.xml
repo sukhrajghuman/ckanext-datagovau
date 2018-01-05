@@ -1,0 +1,15 @@
+<layer>
+    <name>clum_50m0917m</name>
+    <id>LayerInfoImpl-2c95bff3:160be9ca3d9:-5ae2</id>
+    <type>RASTER</type>
+    <defaultStyle>
+        <id>StyleInfoImpl-2c95bff3:160be9ca3d9:-5acd</id>
+    </defaultStyle>
+    <resource class="coverage">
+        <id>CoverageInfoImpl-2c95bff3:160be9ca3d9:-5ae3</id>
+    </resource>
+    <attribution>
+        <logoWidth>0</logoWidth>
+        <logoHeight>0</logoHeight>
+    </attribution>
+</layer>

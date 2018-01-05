@@ -9,3 +9,7 @@
 build/
 dist/
 distribute-*
+deploy/*.war
+deploy/*.tgz
+deploy/*.zip
+deploy/geoserver

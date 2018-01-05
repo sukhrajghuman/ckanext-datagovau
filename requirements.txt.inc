@@ -3,6 +3,7 @@
 feedparser
 
 #cloud foundry  
+-e .
 #ckan
 # to follow master
 -e git+https://github.com/ckan/ckan#egg=ckan==alwaysinstallanewversionplz

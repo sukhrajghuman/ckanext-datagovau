@@ -1,0 +1,11 @@
+<coverageStore>
+    <id>CoverageStoreInfoImpl-2c95bff3:160be9ca3d9:-7fff</id>
+    <name>clum</name>
+    <type>ImagePyramid</type>
+    <enabled>true</enabled>
+    <workspace>
+        <id>WorkspaceInfoImpl--570ae188:124761b8d78:-7ff3</id>
+    </workspace>
+    <__default>false</__default>
+    <url>file:data/clum_50m0917m</url>
+</coverageStore>

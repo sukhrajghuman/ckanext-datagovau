@@ -1,0 +1,4 @@
+deploy/*.war
+deploy/*.tgz
+deploy/*.zip
+deploy/geoserver
